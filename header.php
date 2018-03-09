@@ -19,9 +19,6 @@
 
 <?php wp_head(); ?>
 
-<link rel="icon" type="image/svg+xml" href="/a/imgs/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="/a/imgs/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/a/imgs/favicon-16x16.png">
 </head>
 
 <body <?php body_class(); ?>>
