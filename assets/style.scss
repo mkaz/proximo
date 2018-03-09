@@ -1,0 +1,41 @@
+/*
+Theme Name: Proximo
+Theme URI: https://github.com/mkaz/proximo/
+Author: Marcus Kazmierczak
+Author URI: https://mkaz.com/
+Description: Description
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: left-sidebar, two-columns, blog
+Text Domain: proximo
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+@import "variables";
+@import "mixins";
+
+@import "shared/normalize";
+@import "shared/accessibility";
+@import "shared/alignments";
+@import "shared/clearings";
+@import "shared/typography";
+@import "shared/forms";
+@import "shared/buttons";
+@import "shared/formatting";
+@import "shared/lists";
+@import "shared/tables";
+@import "shared/navigation";
+@import "shared/links";
+@import "layout";
+@import "sections/header";	
+@import "sections/comments";
+@import "sections/widgets";
+@import "shared/infinitescroll";
+@import "shared/media";
+
+/* custom */
+@import "proximo";

@@ -1,0 +1,111 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+
+/*--------------------------------------------------------------
+## Content Sidebar
+--------------------------------------------------------------*/
+
+.site-content {
+	display: flex;
+}
+
+.content-area {
+	order: 2;
+	flex-grow: 3;
+	max-width: 100%;
+}
+
+.widget-area {
+	order: 1;
+	overflow: hidden;
+	max-width: 320px;
+	min-width: 160px;
+	border-right: $border-struct-style;
+	margin-right: 32px;
+	padding-right: 32px;
+}
+
+/* Let flex wrap if screen smaller than X,
+   X = ( sidebar min-width: 160 + main: 720 + margin: 64 ) */
+@media screen and ( max-width: 944px ) {
+	div.site-content {
+		flex-wrap: wrap-reverse;
+	} 
+}
+
+
+/*--------------------------------------------------------------
+## Single Column / No Active Sidebar
+--------------------------------------------------------------*/
+.no-sidebar .site-main {
+  margin: 0;
+}
+
+.no-sidebar .content-area {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+## Posts
+--------------------------------------------------------------*/
+
+article {
+	max-width: 720px;
+	width: 100%;
+}
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+
+/*--------------------------------------------------------------
+## Pages
+--------------------------------------------------------------*/
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.site-footer {
+	margin-top: 64px;
+	background-color: #E6E6E6;
+}
+.site-info {
+	font-size: 13px;
+	padding: 4px 16px;
+}

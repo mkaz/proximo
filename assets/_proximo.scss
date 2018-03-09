@@ -1,0 +1,35 @@
+
+
+div.site-content {
+	padding: 0 $side-padding;
+}
+
+h2.entry-title {
+	a, a:visited {
+		color: $color__text-main;
+	}
+	a:hover {
+		color: $color__link-hover;
+	}
+}
+
+article {
+	margin-bottom: 32px;
+	padding-bottom: 32px;
+	border-bottom: $border-struct-style;
+}
+
+ul.post-list {
+	list-style: square;
+	list-style-position: inside;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+h5.page-title {
+	font-weight: 700;
+}
+
+.search-submit {
+	margin-top: 8px;
+}
