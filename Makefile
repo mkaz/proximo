@@ -14,6 +14,7 @@ publish: build
 	mkdir -p build/proximo
 	cp *.php build/proximo/
 	cp *.css build/proximo/
+	cp readme.txt build/proximo/
 	cp screenshot.png build/proximo/
 	cp -r inc build/proximo/
 	echo "Zip is dumb. Run this command."
