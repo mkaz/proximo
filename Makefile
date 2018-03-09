@@ -16,4 +16,5 @@ publish: build
 	cp *.css build/proximo/
 	cp screenshot.png build/proximo/
 	cp -r inc build/proximo/
-	
+	echo "Zip is dumb. Run this command."
+	echo "cd build; zip -r proximo.zip proximo/"
