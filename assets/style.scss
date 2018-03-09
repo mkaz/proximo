@@ -4,7 +4,7 @@ Theme URI: https://github.com/mkaz/proximo/
 Author: Marcus Kazmierczak
 Author URI: https://mkaz.com/
 Description: Description
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: left-sidebar, two-columns, blog
@@ -31,7 +31,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "shared/navigation";
 @import "shared/links";
 @import "layout";
-@import "sections/header";	
+@import "sections/header";
 @import "sections/comments";
 @import "sections/widgets";
 @import "shared/infinitescroll";
