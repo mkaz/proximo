@@ -142,9 +142,9 @@ blockquote { margin: 0 1.5em; }
 
 address { margin: 0 0 1.5em; }
 
-pre { background: #F3F3F3; font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace; font-size: 13px; line-height: 1.6; margin-bottom: 1.6em; max-width: 100%; overflow: auto; padding: 1.0em; }
+pre { border: 1px solid #E2E4E7; border-radius: 4px; background-color: none; color: #282838; font-family: Menlo, Consolas, moncaso, monospace; font-size: 14px; line-height: 1.6; margin-bottom: 1.6em; max-width: 100%; overflow: auto; padding: 0.8em 1.6em; }
 
-code, kbd, tt, var { font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace; font-size: 13px; }
+code, kbd, tt, var { color: #282838; font-family: Menlo, Consolas, moncaso, monospace; font-size: 14px; }
 
 abbr, acronym { border-bottom: 1px dotted #666; cursor: help; }
 
@@ -190,7 +190,7 @@ table { margin: 0 0 1.5em; width: 100%; }
 
 table.code { empty-cells: show; }
 
-table.code th, table.code td { font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace; font-size: 12px; padding: 4px 32px 4px 0; line-height: 1.1rem; }
+table.code th, table.code td { font-family: Menlo, Consolas, moncaso, monospace; font-size: 12px; padding: 4px 32px 4px 0; line-height: 1.1rem; }
 
 table.code th:last-child, table.code td:last-child { padding-right: 0; }
 

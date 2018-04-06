@@ -40,19 +40,23 @@ address {
 }
 
 pre {
-	background: $color__background-code;
+	border: 1px solid #E2E4E7;
+	border-radius: 4px;
+	background-color: none;
+	color: #282838;
 	font-family: $font__code;
-	font-size: 13px;
+	font-size: 14px;
 	line-height: $font__line-height-code;
 	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
-	padding: 1.0em;
+	padding: 0.8em 1.6em;
 }
 
 code, kbd, tt, var {
+	color: #282838;
 	font-family: $font__code;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 abbr, acronym {
