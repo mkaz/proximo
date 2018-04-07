@@ -104,13 +104,13 @@ add_action( 'widgets_init', 'proximo_widgets_init' );
  * Enqueue scripts and styles.
  */
 function proximo_scripts() {
-	wp_enqueue_style( 'proximo-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'proximo-style', get_stylesheet_uri(), filemtime( get_template_directory() . '/style.css' ) );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	wp_register_style( 'googleFonts', 'http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic' );
+	wp_register_style( 'googleFonts', '//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic' );
 	wp_enqueue_style( 'googleFonts' );
 }
 add_action( 'wp_enqueue_scripts', 'proximo_scripts' );
