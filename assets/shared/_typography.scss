@@ -81,3 +81,32 @@ blockquote, q {
 		content: "";
 	}
 }
+
+a {
+	color: $color__link;
+	text-decoration: none;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+.entry-content a {
+	text-decoration: underline dotted #999;
+}
+
+.entry-content a:visited {
+	text-decoration: none;
+}

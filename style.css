@@ -156,6 +156,20 @@ blockquote, q { quotes: "" ""; }
 
 blockquote:before, blockquote:after, q:before, q:after { content: ""; }
 
+a { color: #005DAC; text-decoration: none; }
+
+a:visited { color: #005DAC; }
+
+a:hover, a:focus, a:active { color: #FF2800; }
+
+a:focus { outline: thin dotted; }
+
+a:hover, a:active { outline: 0; }
+
+.entry-content a { text-decoration: underline dotted #999; }
+
+.entry-content a:visited { text-decoration: none; }
+
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea { color: #666; border: 1px solid #ccc; border-radius: 3px; }
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus { color: #111; }
@@ -216,15 +230,11 @@ table.center th, table.center td { text-align: center; }
 
 .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next { float: right; text-align: right; width: 50%; }
 
-a { color: #0093C2; text-decoration: none; }
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */ display: none; }
 
-a:visited { color: #0093C2; }
-
-a:hover, a:focus, a:active { color: #FF2800; }
-
-a:focus { outline: thin dotted; }
-
-a:hover, a:active { outline: 0; }
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer { display: block; }
 
 html { box-sizing: border-box; }
 
@@ -320,12 +330,6 @@ div#masthead h4.site-description { margin: 4px 0 0 0; font-size: 16px; font-styl
 .widget ul { margin: 0; padding: 0; list-style: square; list-style-position: inside; }
 
 .widget li { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
-
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */ display: none; }
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer { display: block; }
 
 img { height: auto; /* Make sure images are scaled correctly. */ max-width: 100%; /* Adhere to container width. */ }
 
