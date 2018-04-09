@@ -12,10 +12,48 @@ Text Domain: proximo
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-
 */
 
-@import "variables";
+/* = Colors */
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-code: #F3F3F3;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: #005DAC;
+$color__link-visited:#005DAC;
+$color__link-hover: #FF2800;
+$color__text-main: #404040;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+/* = Fonts */
+//$font__main: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", sans-serif;
+$font__main: "Noto Serif", Georgia, serif;
+$font__code: Menlo, Consolas, moncaso, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-code: 1.6;
+
+
+/* = Structure */
+$size_site-main: 100%;
+$size_site-sidebar: 25%;
+
+$breakpoint_tablet: 37.5em;
+
+$side-padding: 4%;
+$border-struct-style: 1px solid #ccc;
+
+
 @import "mixins";
 
 @import "shared/normalize";
