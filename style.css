@@ -264,7 +264,7 @@ body { background: #fff; /* Fallback for when there is no custom background colo
 /*--------------------------------------------------------------
 ## Posts
 --------------------------------------------------------------*/
-article { max-width: 720px; width: 100%; }
+article { max-width: 720px; min-height: 480px; width: 100%; }
 
 .sticky { display: block; }
 
@@ -393,3 +393,5 @@ ul.post-list { list-style: square; list-style-position: inside; margin-left: 0; 
 h5.page-title { font-weight: 700; }
 
 .search-submit { margin-top: 8px; }
+
+.sharedaddy { margin: 32px 0 16px 0; }

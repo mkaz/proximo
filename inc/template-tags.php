@@ -50,7 +50,7 @@ function proximo_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'proximo' ) );
 		if ( $tags_list ) {
-			printf( '<div class="tags-links">' . esc_html__( 'Tagged %1$s', 'proximo' ) . '</div>', $tags_list ); // WPCS: XSS OK.
+			printf( '<div class="tags-links">' . esc_html__( 'Tags: %1$s', 'proximo' ) . '</div>', $tags_list ); // WPCS: XSS OK.
 		}
 	}
 
@@ -59,16 +59,6 @@ function proximo_entry_footer() {
 		comments_popup_link( esc_html__( 'Leave a comment', 'proximo' ), esc_html__( '1 Comment', 'proximo' ), esc_html__( '% Comments', 'proximo' ) );
 		echo '</span>';
 	}
-
-	edit_post_link(
-		sprintf(
-			/* translators: %s: Name of current post */
-			esc_html__( 'Edit %s', 'proximo' ),
-			the_title( '<span class="screen-reader-text">"', '"</span>', false )
-		),
-		'<span class="edit-link">',
-		'</span>'
-	);
 }
 endif;
 
