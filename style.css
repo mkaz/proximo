@@ -108,16 +108,6 @@ td, th { padding: 0; }
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus { outline: 0; }
 
-.alignleft { display: inline; float: left; margin-right: 1.5em; }
-
-.alignright { display: inline; float: right; margin-left: 1.5em; }
-
-.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
-
-.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after { content: ""; display: table; table-layout: fixed; }
-
-.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after { clear: both; }
-
 body, button, input, select, textarea { color: #404040; font-family: "Noto Serif", Georgia, serif; font-size: 1rem; line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 { clear: both; font-weight: 700; line-height: 1.1; margin-bottom: 0.5rem; }
@@ -187,6 +177,16 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 button:active, button:focus, input[type="button"]:active, input[type="button"]:focus, input[type="reset"]:active, input[type="reset"]:focus, input[type="submit"]:active, input[type="submit"]:focus { border-color: #aaa #bbb #bbb; box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
 hr { background-color: #ccc; border: 0; height: 1px; margin-bottom: 1.5em; }
+
+.alignleft { display: inline; float: left; margin-right: 1.5em; }
+
+.alignright { display: inline; float: right; margin-left: 1.5em; }
+
+.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
+
+.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after { content: ""; display: table; table-layout: fixed; }
+
+.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after { clear: both; }
 
 ul, ol { margin: 0 3em 1.5em 0em; }
 
@@ -264,7 +264,7 @@ body { background: #fff; /* Fallback for when there is no custom background colo
 /*--------------------------------------------------------------
 ## Posts
 --------------------------------------------------------------*/
-article { max-width: 720px; min-height: 480px; width: 100%; }
+article { max-width: 720px; width: 100%; }
 
 .sticky { display: block; }
 
