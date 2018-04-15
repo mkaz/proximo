@@ -12,9 +12,7 @@ Text Domain: proximo
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-
 */
-/* Variables */
 /* = Colors */
 /* = Fonts */
 /* = Structure */
@@ -276,6 +274,10 @@ article { max-width: 720px; width: 100%; }
 
 .page-content, .entry-content, .entry-summary { margin: 1.5em 0 0; }
 
+.page-content h2, .page-content h3, .entry-content h2, .entry-content h3, .entry-summary h2, .entry-summary h3 { margin-top: 4.0rem; }
+
+.page-content h4, .page-content h5, .entry-content h4, .entry-content h5, .entry-summary h4, .entry-summary h5 { margin-top: 2.0rem; }
+
 /*--------------------------------------------------------------
 ## Pages
 --------------------------------------------------------------*/
@@ -378,6 +380,8 @@ embed, iframe, object { max-width: 100%; }
 .gallery-columns-9 .gallery-item { max-width: 11.11%; }
 
 .gallery-caption { display: block; }
+
+.img-size-med { max-width: 480px; }
 
 /* custom */
 div.site-content { padding: 0 4%; }
