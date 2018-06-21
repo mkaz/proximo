@@ -15,15 +15,16 @@ get_header(); ?>
 		<?php
 		if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header>
 				<h5 class="page-title"><?php printf( esc_html__( 'Search Results: %s', 'proximo' ), '<span>' . get_search_query() . '</span>' ); ?></h5>
 			</header>
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-				get_template_part( 'inc/content', 'excerpt' );
-			endwhile;
 
+			<ul class="post-list">
+			<?php while ( have_posts() ) : the_post();
+				get_template_part( 'inc/content', 'excerpt' );
+			endwhile; ?>
+			</ul>
+			<?php
 			the_posts_navigation();
 
 		else :
