@@ -106,9 +106,9 @@ td, th { padding: 0; }
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus { outline: 0; }
 
-body, button, input, select, textarea { color: #404040; font-family: "Noto Serif", Georgia, serif; font-size: 1rem; line-height: 1.5; }
+body, button, input, select, textarea { color: #404040; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", sans-serif; font-size: 1rem; line-height: 1.5; }
 
-h1, h2, h3, h4, h5, h6 { clear: both; font-weight: 700; line-height: 1.1; margin-bottom: 0.5rem; }
+h1, h2, h3, h4, h5, h6 { clear: both; font-family: "Roboto Slab", Georgia, serif; font-weight: 400; line-height: 1.1; margin-bottom: 0.5rem; }
 
 h1 { font-size: 2.441rem; }
 
@@ -148,7 +148,7 @@ a { color: #005DAC; text-decoration: none; }
 
 a:visited { color: #005DAC; }
 
-a:hover, a:focus, a:active { color: #FF2800; }
+a:hover, a:focus, a:active { color: #FB4934; }
 
 a:focus { outline: thin dotted; }
 
@@ -240,17 +240,14 @@ html { box-sizing: border-box; }
 
 body { background: #fff; /* Fallback for when there is no custom background color defined. */ }
 
+main { max-width: 720px; margin: 0 auto; width: 100%; }
+
 /*--------------------------------------------------------------
 ## Content Sidebar
 --------------------------------------------------------------*/
-.site-content { display: flex; }
+.content-area { max-width: 100%; }
 
-.content-area { order: 2; flex-grow: 3; max-width: 100%; }
-
-.widget-area { order: 1; overflow: hidden; max-width: 320px; min-width: 160px; border-right: 1px solid #ccc; margin-right: 32px; padding-right: 32px; }
-
-/* Let flex wrap if screen smaller than X, X = ( sidebar min-width: 160 + main: 720 + margin: 64 ) */
-@media screen and (max-width: 944px) { div.site-content { flex-wrap: wrap-reverse; } }
+.widget-area { overflow: hidden; max-width: 320px; min-width: 160px; border-right: 1px solid #ccc; margin-right: 32px; padding-right: 32px; }
 
 /*--------------------------------------------------------------
 ## Single Column / No Active Sidebar
@@ -266,7 +263,7 @@ article { max-width: 720px; width: 100%; }
 
 .sticky { display: block; }
 
-.hentry { margin: 0 0 1.5em; }
+.hentry { margin: 0 auto; }
 
 .byline, .updated:not(.published) { display: none; }
 
@@ -287,7 +284,7 @@ article { max-width: 720px; width: 100%; }
 
 .site-info { font-size: 13px; padding: 4px 16px; }
 
-header.site-header { width: 100%; padding: 16px 4%; margin-bottom: 32px; border-bottom: 1px solid #ccc; }
+header.site-header { width: 100%; background-color: #282828; padding: 16px 4%; margin-bottom: 32px; border-bottom: 1px solid #ccc; }
 
 div#masthead { max-width: 1024px; display: flex; justify-content: space-between; }
 
@@ -295,9 +292,11 @@ div#masthead div.site-branding { min-width: 360px; width: 100%; }
 
 div#masthead .logo { width: 24px; height: 24px; }
 
-div#masthead h3.site-title { display: inline-block; font-size: 32px; margin: 0px 0px 0px 4px; color: #111; }
+div#masthead h3.site-title { display: inline-block; font-family: "Roboto Slab", Georgia, serif; font-weight: 700; font-size: 36px; margin: 0px 0px 0px 4px; color: #FE8019; }
 
-div#masthead h3.site-title a, div#masthead h3.site-title a:visited { color: #111; }
+div#masthead h3.site-title a, div#masthead h3.site-title a:visited { color: #FE8019; }
+
+div#masthead h3.site-title a:hover { color: #FB4934; }
 
 div#masthead h4.site-description { margin: 4px 0 0 0; font-size: 16px; font-style: italic; font-weight: 300; text-transform: lowercase; color: #AAA; }
 
@@ -317,7 +316,9 @@ div#masthead h4.site-description { margin: 4px 0 0 0; font-size: 16px; font-styl
 
 .main-navigation li { display: inline-block; margin-right: 16px; }
 
-.main-navigation a { display: inline-block; text-decoration: none; }
+.main-navigation a { display: inline-block; text-decoration: none; color: #FABD2F; }
+
+.main-navigation a:hover { color: #FB4934; }
 
 .comment-content a { word-wrap: break-word; }
 
@@ -388,7 +389,7 @@ div.site-content { padding: 0 4%; }
 
 h2.entry-title a, h2.entry-title a:visited { color: #404040; }
 
-h2.entry-title a:hover { color: #FF2800; }
+h2.entry-title a:hover { color: #FB4934; }
 
 article { margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid #ccc; }
 

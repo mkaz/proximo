@@ -110,7 +110,7 @@ function proximo_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	wp_register_style( 'googleFonts', '//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic' );
+	wp_register_style( 'googleFonts', '//fonts.googleapis.com/css?family=Roboto+Slab:400,700' );
 	wp_enqueue_style( 'googleFonts' );
 }
 add_action( 'wp_enqueue_scripts', 'proximo_scripts' );
