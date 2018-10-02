@@ -32,7 +32,7 @@ bunch to make it easier to find what to update.
 
 
 Proximo theme was loosely modeled after the design of Next.js blog, at least
-the same white background.
+they share the same white background.
 
 
 ## License
