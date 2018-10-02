@@ -1,21 +1,27 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+  background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+div#masthead {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 main {
-	max-width: 720px;
-	margin: 0 auto;
-	width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -23,18 +29,23 @@ main {
 --------------------------------------------------------------*/
 
 .content-area {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .widget-area {
-	overflow: hidden;
-	max-width: 320px;
-	min-width: 160px;
-	border-right: $border-struct-style;
-	margin-right: 32px;
-	padding-right: 32px;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  min-width: 160px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+section.widget {
+  width: 320px;
+  margin-right: 32px;
+  padding-right: 32px;
+}
 
 /*--------------------------------------------------------------
 ## Single Column / No Active Sidebar
@@ -54,41 +65,34 @@ main {
 --------------------------------------------------------------*/
 
 article {
-	max-width: 720px;
-	width: 100%;
+  max-width: 720px;
+  width: 100%;
 }
 
 .sticky {
-	display: block;
+  display: block;
 }
 
 .hentry {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 .byline,
 .updated:not(.published){
-	display: none;
+  display: none;
 }
 
 .single .byline,
 .group-blog .byline {
-	display: inline;
+  display: inline;
 }
 
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
+.entry-header {
+  margin-bottom: 8px;
+}
 
-	h2, h3 {
-		margin-top: 4.0rem;
-	}
-
-	h4, h5 {
-		margin-top: 2.0rem;
-	}
-
+.entry-meta {
+  font-size: 0.9rem;
 }
 
 
@@ -96,15 +100,16 @@ article {
 ## Pages
 --------------------------------------------------------------*/
 .page-links {
-	clear: both;
-	margin: 0 0 1.5em;
+  clear: both;
+  margin: 0 0 1.5em;
 }
 
 .site-footer {
-	margin-top: 64px;
-	background-color: #E6E6E6;
+  margin-top: 64px;
+  padding: 8px 0;
+  background-color: #EBDBB2;
 }
 .site-info {
-	font-size: 13px;
-	padding: 4px 16px;
+  font-size: 13px;
+  padding: 4px 16px;
 }

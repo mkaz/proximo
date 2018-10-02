@@ -1,29 +1,29 @@
 .widget {
 
-	margin: 24px 0;
-	padding-bottom: 24px;
-	/* border-bottom: $border-struct-style; */
+  margin: 24px 0;
+  padding-bottom: 24px;
+  /* border-bottom: $border-struct-style; */
 
-	select {
-		max-width: 100%;
-	}
+  select {
+    max-width: 100%;
+  }
 
-	h2.widget-title {
-		font-size: 18px;
-		margin-bottom: 0px;
-	}
+  h2.widget-title {
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
 
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: square;
-		list-style-position: inside;
-	}
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: square;
+    list-style-position: inside;
+  }
 
-	li {
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		overflow: hidden;
-	}
+  li {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }
 

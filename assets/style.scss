@@ -61,19 +61,11 @@ $border-struct-style: 1px solid #ccc;
 
 @import "mixins";
 
-@import "shared/normalize";
-@import "shared/accessibility";
-@import "shared/typography";
-@import "shared/forms";
-@import "shared/formatting";
-@import "shared/lists";
-@import "shared/tables";
-@import "shared/navigation";
+@import "base";
 @import "layout";
 @import "sections/header";
 @import "sections/comments";
 @import "sections/widgets";
-@import "shared/media";
 
 /* custom */
 @import "proximo";

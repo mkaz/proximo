@@ -16,10 +16,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* = Colors */
 /* = Fonts */
 /* = Structure */
-/*
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-*/
+/* All the CSS */
 html { line-height: 1.15; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 body { margin: 0; }
@@ -98,6 +95,34 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 td, th { padding: 0; }
 
+ul, ol { margin: 0 3em 1.5em 0em; }
+
+ul { list-style: square; }
+
+ol { list-style: decimal; }
+
+li > ul, li > ol { margin-bottom: 0; margin-left: 0.5em; }
+
+dt { font-weight: bold; }
+
+dd { margin: 0 1.5em 1.5em; }
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea { color: #666; border: 1px solid #ccc; border-radius: 3px; }
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus { color: #111; }
+
+select { border: 1px solid #ccc; }
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"] { padding: 3px; }
+
+textarea { padding-left: 3px; width: 100%; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { border: 1px solid; border-color: #ccc #ccc #bbb; border-radius: 3px; background: #e6e6e6; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05); color: rgba(0, 0, 0, 0.8); font-size: 0.75rem; line-height: 1; padding: .6em 1em .4em; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { border-color: #ccc #bbb #aaa; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+
+button:active, button:focus, input[type="button"]:active, input[type="button"]:focus, input[type="reset"]:active, input[type="reset"]:focus, input[type="submit"]:active, input[type="submit"]:focus { border-color: #aaa #bbb #bbb; box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+
 /* Text meant only for screen readers. */
 .screen-reader-text { clip: rect(1px, 1px, 1px, 1px); position: absolute !important; height: 1px; width: 1px; overflow: hidden; }
 
@@ -105,6 +130,54 @@ td, th { padding: 0; }
 
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus { outline: 0; }
+
+hr { background-color: #ccc; border: 0; height: 1px; margin-bottom: 1.5em; }
+
+.alignleft { display: inline; float: left; margin-right: 1.5em; }
+
+.alignright { display: inline; float: right; margin-left: 1.5em; }
+
+.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
+
+.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after { content: ""; display: table; table-layout: fixed; }
+
+.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after { clear: both; }
+
+table { margin: 0 0 1.5em; width: 100%; }
+
+table.code { empty-cells: show; }
+
+table.code th, table.code td { font-family: Menlo, Consolas, moncaso, monospace; font-size: 12px; padding: 4px 32px 4px 0; line-height: 1.1rem; }
+
+table.code th:last-child, table.code td:last-child { padding-right: 0; }
+
+table.center th, table.center td { text-align: center; }
+
+.content-area table { empty-cells: show; font-size: 0.9em; width: 100%; margin-bottom: 1.1em; }
+
+.content-area table tbody > tr:nth-child(odd) > td { background: #f9f9f9; }
+
+.content-area th, .content-area td { padding: 2%; margin: 0; overflow: visible; line-height: 120%; border-bottom: 1px solid #DDD; }
+
+.content-area th { padding-top: 0; }
+
+.content-area caption { color: #111; text-align: center; padding: 2%; }
+
+.content-area thead { vertical-align: bottom; white-space: nowrap; }
+
+.content-area th { font-weight: bold; color: #111; }
+
+.site-main .comment-navigation, .site-main .posts-navigation, .site-main .post-navigation { margin: 0 0 1.5em; overflow: hidden; }
+
+.comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous { float: left; width: 50%; }
+
+.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next { float: right; text-align: right; width: 50%; }
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */ display: none; }
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer { display: block; }
 
 body, button, input, select, textarea { color: #404040; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", sans-serif; font-size: 1rem; line-height: 1.5; }
 
@@ -158,185 +231,7 @@ a:hover, a:active { outline: 0; }
 
 .entry-content a:visited { text-decoration: none; }
 
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea { color: #666; border: 1px solid #ccc; border-radius: 3px; }
-
-input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus { color: #111; }
-
-select { border: 1px solid #ccc; }
-
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"] { padding: 3px; }
-
-textarea { padding-left: 3px; width: 100%; }
-
-button, input[type="button"], input[type="reset"], input[type="submit"] { border: 1px solid; border-color: #ccc #ccc #bbb; border-radius: 3px; background: #e6e6e6; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05); color: rgba(0, 0, 0, 0.8); font-size: 0.75rem; line-height: 1; padding: .6em 1em .4em; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-
-button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { border-color: #ccc #bbb #aaa; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-
-button:active, button:focus, input[type="button"]:active, input[type="button"]:focus, input[type="reset"]:active, input[type="reset"]:focus, input[type="submit"]:active, input[type="submit"]:focus { border-color: #aaa #bbb #bbb; box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
-
-hr { background-color: #ccc; border: 0; height: 1px; margin-bottom: 1.5em; }
-
-.alignleft { display: inline; float: left; margin-right: 1.5em; }
-
-.alignright { display: inline; float: right; margin-left: 1.5em; }
-
-.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
-
-.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after { content: ""; display: table; table-layout: fixed; }
-
-.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after { clear: both; }
-
-ul, ol { margin: 0 3em 1.5em 0em; }
-
-ul { list-style: square; }
-
-ol { list-style: decimal; }
-
-li > ul, li > ol { margin-bottom: 0; margin-left: 0.5em; }
-
-dt { font-weight: bold; }
-
-dd { margin: 0 1.5em 1.5em; }
-
-table { margin: 0 0 1.5em; width: 100%; }
-
-table.code { empty-cells: show; }
-
-table.code th, table.code td { font-family: Menlo, Consolas, moncaso, monospace; font-size: 12px; padding: 4px 32px 4px 0; line-height: 1.1rem; }
-
-table.code th:last-child, table.code td:last-child { padding-right: 0; }
-
-table.center th, table.center td { text-align: center; }
-
-.content-area table { empty-cells: show; font-size: 0.9em; width: 100%; margin-bottom: 1.1em; }
-
-.content-area table tbody > tr:nth-child(odd) > td { background: #f9f9f9; }
-
-.content-area th, .content-area td { padding: 2%; margin: 0; overflow: visible; line-height: 120%; border-bottom: 1px solid #DDD; }
-
-.content-area th { padding-top: 0; }
-
-.content-area caption { color: #111; text-align: center; padding: 2%; }
-
-.content-area thead { vertical-align: bottom; white-space: nowrap; }
-
-.content-area th { font-weight: bold; color: #111; }
-
-.site-main .comment-navigation, .site-main .posts-navigation, .site-main .post-navigation { margin: 0 0 1.5em; overflow: hidden; }
-
-.comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous { float: left; width: 50%; }
-
-.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next { float: right; text-align: right; width: 50%; }
-
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */ display: none; }
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer { display: block; }
-
-html { box-sizing: border-box; }
-
-*, *:before, *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */ box-sizing: inherit; }
-
-body { background: #fff; /* Fallback for when there is no custom background color defined. */ }
-
-main { max-width: 720px; margin: 0 auto; width: 100%; }
-
-/*--------------------------------------------------------------
-## Content Sidebar
---------------------------------------------------------------*/
-.content-area { max-width: 100%; }
-
-.widget-area { overflow: hidden; max-width: 320px; min-width: 160px; border-right: 1px solid #ccc; margin-right: 32px; padding-right: 32px; }
-
-/*--------------------------------------------------------------
-## Single Column / No Active Sidebar
---------------------------------------------------------------*/
-.no-sidebar .site-main { margin: 0; }
-
-.no-sidebar .content-area { float: none; margin-left: auto; margin-right: auto; }
-
-/*--------------------------------------------------------------
-## Posts
---------------------------------------------------------------*/
-article { max-width: 720px; width: 100%; }
-
-.sticky { display: block; }
-
-.hentry { margin: 0 auto; }
-
-.byline, .updated:not(.published) { display: none; }
-
-.single .byline, .group-blog .byline { display: inline; }
-
-.page-content, .entry-content, .entry-summary { margin: 1.5em 0 0; }
-
-.page-content h2, .page-content h3, .entry-content h2, .entry-content h3, .entry-summary h2, .entry-summary h3 { margin-top: 4.0rem; }
-
-.page-content h4, .page-content h5, .entry-content h4, .entry-content h5, .entry-summary h4, .entry-summary h5 { margin-top: 2.0rem; }
-
-/*--------------------------------------------------------------
-## Pages
---------------------------------------------------------------*/
-.page-links { clear: both; margin: 0 0 1.5em; }
-
-.site-footer { margin-top: 64px; background-color: #E6E6E6; }
-
-.site-info { font-size: 13px; padding: 4px 16px; }
-
-header.site-header { width: 100%; background-color: #282828; padding: 16px 4%; margin-bottom: 32px; border-bottom: 1px solid #ccc; }
-
-div#masthead { max-width: 1024px; display: flex; justify-content: space-between; }
-
-div#masthead div.site-branding { min-width: 360px; width: 100%; }
-
-div#masthead .logo { width: 24px; height: 24px; }
-
-div#masthead h3.site-title { display: inline-block; font-family: "Roboto Slab", Georgia, serif; font-weight: 700; font-size: 36px; margin: 0px 0px 0px 4px; color: #FE8019; }
-
-div#masthead h3.site-title a, div#masthead h3.site-title a:visited { color: #FE8019; }
-
-div#masthead h3.site-title a:hover { color: #FB4934; }
-
-div#masthead h4.site-description { margin: 4px 0 0 0; font-size: 16px; font-style: italic; font-weight: 300; text-transform: lowercase; color: #AAA; }
-
-.main-navigation { display: block; min-width: 240px; }
-
-.main-navigation ul { display: block; list-style: none; margin: 0; padding-left: 0; }
-
-.main-navigation ul ul { box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); float: left; position: absolute; top: 1.5em; left: -999em; z-index: 99999; }
-
-.main-navigation ul ul ul { left: -999em; top: 0; }
-
-.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul { left: 100%; }
-
-.main-navigation ul ul a { width: 200px; }
-
-.main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul { left: auto; }
-
-.main-navigation li { display: inline-block; margin-right: 16px; }
-
-.main-navigation a { display: inline-block; text-decoration: none; color: #FABD2F; }
-
-.main-navigation a:hover { color: #FB4934; }
-
-.comment-content a { word-wrap: break-word; }
-
-.bypostauthor { display: block; }
-
-.widget { margin: 24px 0; padding-bottom: 24px; /* border-bottom: $border-struct-style; */ }
-
-.widget select { max-width: 100%; }
-
-.widget h2.widget-title { font-size: 18px; margin-bottom: 0px; }
-
-.widget ul { margin: 0; padding: 0; list-style: square; list-style-position: inside; }
-
-.widget li { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
-
 img { height: auto; /* Make sure images are scaled correctly. */ max-width: 100%; /* Adhere to container width. */ }
-
-.page-content .wp-smiley, .entry-content .wp-smiley, .comment-content .wp-smiley { border: none; margin-bottom: 0; margin-top: 0; padding: 0; }
 
 /* Make sure embeds and iframes fit their containers. */
 embed, iframe, object { max-width: 100%; }
@@ -383,6 +278,108 @@ embed, iframe, object { max-width: 100%; }
 .gallery-caption { display: block; }
 
 .img-size-med { max-width: 480px; }
+
+html { box-sizing: border-box; }
+
+*, *:before, *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */ box-sizing: inherit; }
+
+body { background: #fff; /* Fallback for when there is no custom background color defined. */ }
+
+div#masthead { max-width: 800px; margin: 0 auto; width: 100%; }
+
+main { max-width: 720px; margin: 0 auto; width: 100%; }
+
+/*--------------------------------------------------------------
+## Content Sidebar
+--------------------------------------------------------------*/
+.content-area { max-width: 100%; }
+
+.widget-area { max-width: 720px; width: 100%; margin: 0 auto; min-width: 160px; display: flex; flex-wrap: wrap; }
+
+section.widget { width: 320px; margin-right: 32px; padding-right: 32px; }
+
+/*--------------------------------------------------------------
+## Single Column / No Active Sidebar
+--------------------------------------------------------------*/
+.no-sidebar .site-main { margin: 0; }
+
+.no-sidebar .content-area { float: none; margin-left: auto; margin-right: auto; }
+
+/*--------------------------------------------------------------
+## Posts
+--------------------------------------------------------------*/
+article { max-width: 720px; width: 100%; }
+
+.sticky { display: block; }
+
+.hentry { margin: 0 auto; }
+
+.byline, .updated:not(.published) { display: none; }
+
+.single .byline, .group-blog .byline { display: inline; }
+
+.entry-header { margin-bottom: 8px; }
+
+.entry-meta { font-size: 0.9rem; }
+
+/*--------------------------------------------------------------
+## Pages
+--------------------------------------------------------------*/
+.page-links { clear: both; margin: 0 0 1.5em; }
+
+.site-footer { margin-top: 64px; padding: 8px 0; background-color: #EBDBB2; }
+
+.site-info { font-size: 13px; padding: 4px 16px; }
+
+header.site-header { width: 100%; background-color: #282828; padding: 16px 4%; margin-bottom: 32px; border-bottom: 1px solid #ccc; }
+
+div#masthead { max-width: 800px; display: flex; justify-content: space-between; }
+
+div#masthead div.site-branding { min-width: 360px; width: 100%; }
+
+div#masthead .logo { width: 24px; height: 24px; }
+
+div#masthead h3.site-title { display: inline-block; font-family: "Roboto Slab", Georgia, serif; font-weight: 700; font-size: 36px; margin: 0px 0px 0px 4px; color: #FE8019; }
+
+div#masthead h3.site-title a, div#masthead h3.site-title a:visited { color: #FE8019; }
+
+div#masthead h3.site-title a:hover { color: #FB4934; }
+
+div#masthead h4.site-description { margin: 4px 0 0 0; font-size: 16px; font-style: italic; font-weight: 300; text-transform: lowercase; color: #AAA; }
+
+.main-navigation { display: block; min-width: 240px; }
+
+.main-navigation ul { display: block; list-style: none; margin: 0; padding-left: 0; }
+
+.main-navigation ul ul { box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); float: left; position: absolute; top: 1.5em; left: -999em; z-index: 99999; }
+
+.main-navigation ul ul ul { left: -999em; top: 0; }
+
+.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul { left: 100%; }
+
+.main-navigation ul ul a { width: 200px; }
+
+.main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul { left: auto; }
+
+.main-navigation li { display: inline-block; margin-right: 16px; }
+
+.main-navigation a { display: inline-block; text-decoration: none; color: #FABD2F; }
+
+.main-navigation a:hover { color: #FB4934; }
+
+.comment-content a { word-wrap: break-word; }
+
+.bypostauthor { display: block; }
+
+.widget { margin: 24px 0; padding-bottom: 24px; /* border-bottom: $border-struct-style; */ }
+
+.widget select { max-width: 100%; }
+
+.widget h2.widget-title { font-size: 18px; margin-bottom: 0px; }
+
+.widget ul { margin: 0; padding: 0; list-style: square; list-style-position: inside; }
+
+.widget li { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
 
 /* custom */
 div.site-content { padding: 0 4%; }
