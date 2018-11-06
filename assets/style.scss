@@ -14,9 +14,10 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-/* = Colors */
-$color__background-body: #fff;
-$color__background-screen: #f1f1f1;
+$color_background: #F5F5F5;
+$color_background_content: #FFFFFF;
+
+
 $color__background-hr: #ccc;
 $color__background-button: #e6e6e6;
 $color__background-code: #F3F3F3;
@@ -40,7 +41,6 @@ $color__header-background: #282828;
 $color__header-title: #FE8019;
 $color__header-nav: #FABD2F;
 
-/* = Fonts */
 //$font__main: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", sans-serif;
 $font__main: "Charter", Georgia, serif;
 $font__main_size: 20px;
@@ -50,23 +50,12 @@ $font__line-height-body: 1.5;
 $font__line-height-code: 1.6;
 
 
-/* = Structure */
 $size_site-main: 100%;
-$size_site-sidebar: 25%;
 
 $breakpoint_tablet: 37.5em;
 
 $side-padding: 4%;
 $border-struct-style: 1px solid #ccc;
 
-
-@import "mixins";
-
 @import "base";
-@import "layout";
-@import "sections/header";
-@import "sections/comments";
-@import "sections/widgets";
-
-/* custom */
 @import "proximo";

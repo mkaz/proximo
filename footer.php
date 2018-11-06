@@ -11,15 +11,15 @@
 
 ?>
 
-    </div>
-    <footer id="colophon" class="site-footer" role="contentinfo">
-        <div class="site-info">
-            <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'proximo' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'proximo' ), 'WordPress' ); ?></a>
-            <span class="sep"> | </span>
-            Theme: <a href="https://github.com/mkaz/proximo">Proximo</a> crafted by <a href="https://mkaz.com/" rel="designer">mkaz</a>
-        </div>
-    </footer>
 </div>
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="site-info">
+        <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'proximo' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'proximo' ), 'WordPress' ); ?></a>
+        <span class="sep"> | </span>
+        Theme: <a href="https://github.com/mkaz/proximo">Proximo</a> crafted by <a href="https://mkaz.com/" rel="designer">mkaz</a>
+    </div>
+</footer>
+
 <?php wp_footer(); ?>
 
 </body>
