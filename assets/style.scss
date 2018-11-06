@@ -41,9 +41,10 @@ $color__header-title: #FE8019;
 $color__header-nav: #FABD2F;
 
 /* = Fonts */
-$font__main: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", sans-serif;
-//$font__main: "Noto Serif", Georgia, serif;
-$font__headers: "Roboto Slab", Georgia, serif;
+//$font__main: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", sans-serif;
+$font__main: "Charter", Georgia, serif;
+$font__main_size: 20px;
+$font__headers: "Charter-Bold", Georgia, serif;
 $font__code: Menlo, Consolas, moncaso, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-code: 1.6;

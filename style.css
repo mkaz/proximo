@@ -179,9 +179,9 @@ table.center th, table.center td { text-align: center; }
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer { display: block; }
 
-body, button, input, select, textarea { color: #404040; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", sans-serif; font-size: 1rem; line-height: 1.5; }
+body, button, input, select, textarea { color: #404040; font-family: "Charter", Georgia, serif; font-size: 20px; line-height: 1.5; }
 
-h1, h2, h3, h4, h5, h6 { clear: both; font-family: "Roboto Slab", Georgia, serif; font-weight: 400; line-height: 1.1; margin-bottom: 0.5rem; }
+h1, h2, h3, h4, h5, h6 { clear: both; font-family: "Charter-Bold", Georgia, serif; font-weight: 400; line-height: 1.1; margin-bottom: 0.5rem; }
 
 h1 { font-size: 2.441rem; }
 
@@ -339,7 +339,7 @@ div#masthead div.site-branding { min-width: 360px; width: 100%; }
 
 div#masthead .logo { width: 24px; height: 24px; }
 
-div#masthead h3.site-title { display: inline-block; font-family: "Roboto Slab", Georgia, serif; font-weight: 700; font-size: 36px; margin: 0px 0px 0px 4px; color: #FE8019; }
+div#masthead h3.site-title { display: inline-block; font-family: "Charter-Bold", Georgia, serif; font-weight: 700; font-size: 36px; margin: 0px 0px 0px 4px; color: #FE8019; }
 
 div#masthead h3.site-title a, div#masthead h3.site-title a:visited { color: #FE8019; }
 
