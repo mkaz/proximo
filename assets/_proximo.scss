@@ -1,10 +1,4 @@
 
-div#masthead {
-	max-width: 860px;
-    margin: 0 auto;
-    width: 100%;
-}
-
 main {
 	max-width: 860px;
     margin: 0 auto;
@@ -81,13 +75,16 @@ header.site-header {
     width: 100%;
     background-color: $color__header-background;
 
-    padding: 16px $side-padding;
+    padding: 16px 0;
     margin-bottom: 32px;
     border-bottom: $border-struct-style;
   }
 
   div#masthead {
-    max-width: 800px;
+  	max-width: 860px;
+    margin: 0 auto;
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
 
@@ -127,10 +124,10 @@ header.site-header {
     }
   }
 
-
   .main-navigation {
     display: block;
     min-width: 240px;
+	text-align: right;
 
     ul {
       display: block;
@@ -182,7 +179,13 @@ header.site-header {
     a:hover {
       color: $color__link-hover;
     }
-  }
+}
+
+@media (max-width: 600px) {
+	.main-navigation {
+		display: none;
+	}
+}
 
 h1.entry-title,
 h2.entry-title {
@@ -196,6 +199,7 @@ h2.entry-title {
     }
 
 	margin-top: 4px;
+	padding-left: 4px;
 }
 
 
@@ -209,6 +213,7 @@ ul.post-list {
 h5.page-title {
 	margin-top: 0;
     font-weight: 700;
+	padding-left: 4px;
 }
 
 .search-submit {

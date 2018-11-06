@@ -263,8 +263,6 @@ embed, iframe, object { max-width: 100%; }
 
 .img-size-med { max-width: 480px; }
 
-div#masthead { max-width: 860px; margin: 0 auto; width: 100%; }
-
 main { max-width: 860px; margin: 0 auto; width: 100%; }
 
 .widget-area { max-width: 800px; width: 100%; margin: 0 auto; min-width: 160px; display: flex; flex-wrap: wrap; }
@@ -291,9 +289,9 @@ article { width: 100%; background-color: #FFFFFF; padding: 4% 8% 4% 8%; margin: 
 
 .site-info { font-size: 13px; padding: 4px 16px; }
 
-header.site-header { width: 100%; background-color: #282828; padding: 16px 4%; margin-bottom: 32px; border-bottom: 1px solid #ccc; }
+header.site-header { width: 100%; background-color: #282828; padding: 16px 0; margin-bottom: 32px; border-bottom: 1px solid #ccc; }
 
-div#masthead { max-width: 800px; display: flex; justify-content: space-between; }
+div#masthead { max-width: 860px; margin: 0 auto; width: 100%; display: flex; justify-content: space-between; }
 
 div#masthead div.site-branding { min-width: 360px; width: 100%; }
 
@@ -307,7 +305,7 @@ div#masthead h3.site-title a:hover { color: #FB4934; }
 
 div#masthead h4.site-description { margin: 4px 0 0 0; font-size: 16px; font-style: italic; font-weight: 300; text-transform: lowercase; color: #AAA; }
 
-.main-navigation { display: block; min-width: 240px; }
+.main-navigation { display: block; min-width: 240px; text-align: right; }
 
 .main-navigation ul { display: block; list-style: none; margin: 0; padding-left: 0; }
 
@@ -327,7 +325,9 @@ div#masthead h4.site-description { margin: 4px 0 0 0; font-size: 16px; font-styl
 
 .main-navigation a:hover { color: #FB4934; }
 
-h1.entry-title, h2.entry-title { font-size: 2.0rem; margin-top: 4px; }
+@media (max-width: 600px) { .main-navigation { display: none; } }
+
+h1.entry-title, h2.entry-title { font-size: 2.0rem; margin-top: 4px; padding-left: 4px; }
 
 h1.entry-title a, h1.entry-title a:visited, h2.entry-title a, h2.entry-title a:visited { color: #404040; }
 
@@ -335,7 +335,7 @@ h1.entry-title a:hover, h2.entry-title a:hover { color: #FB4934; }
 
 ul.post-list { list-style: square; list-style-position: inside; margin: 0; padding: 0; }
 
-h5.page-title { margin-top: 0; font-weight: 700; }
+h5.page-title { margin-top: 0; font-weight: 700; padding-left: 4px; }
 
 .search-submit { margin-top: 8px; }
 
