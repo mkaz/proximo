@@ -9,32 +9,33 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<main id="main" class="content-area" role="main">
 
-		<?php
-		if ( have_posts() ) : ?>
+<?php
+if ( have_posts() ) : ?>
 
-			<header>
-				<h5 class="page-title"><?php printf( esc_html__( 'Search Results: %s', 'proximo' ), '<span>' . get_search_query() . '</span>' ); ?></h5>
-			</header>
+	<header>
+		<h5 class="page-title">
+			<?php printf( esc_html( 'Search Results: %s' ), '<span>' . get_search_query() . '</span>' ); ?>
+		</h5>
+	</header>
 
-			<ul class="post-list">
-			<?php while ( have_posts() ) : the_post();
-				get_template_part( 'inc/content', 'excerpt' );
-			endwhile; ?>
-			</ul>
-			<?php
-			the_posts_navigation();
+	<ul class="post-list">
+		<?php while ( have_posts() ) : the_post();
+			get_template_part( 'inc/content', 'excerpt' );
+		endwhile; ?>
+	</ul>
+	<?php
+	the_posts_navigation();
 
-		else :
+else :
 
-			get_template_part( 'inc/content', 'none' );
+	get_template_part( 'inc/content', 'none' );
 
-		endif; ?>
+endif; ?>
 
-		</main>
-	</section>
+</main>
+
 <?php
 get_sidebar();
 get_footer();

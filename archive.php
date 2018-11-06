@@ -9,36 +9,33 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<main id="main" class="content-area" role="main">
+	<?php
+	if ( have_posts() ) : ?>
 
-		<?php
-		if ( have_posts() ) : ?>
-
-			<header>
-				<?php
-					the_archive_title( '<h5 class="page-title">', '</h5>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header>
-
-			<ul class="post-list">
-				<?php
-				while ( have_posts() ) : the_post();
-					get_template_part( 'inc/content', 'excerpt' );
-				endwhile; ?>
-			</ul>
+		<header>
 			<?php
-			the_posts_navigation();
+				the_archive_title( '<h5 class="page-title">', '</h5>' );
+				the_archive_description( '<div class="taxonomy-description">', '</div>' );
+			?>
+		</header>
 
-		else :
+		<ul class="post-list">
+			<?php
+			while ( have_posts() ) : the_post();
+				get_template_part( 'inc/content', 'excerpt' );
+			endwhile; ?>
+		</ul>
+		<?php
+		the_posts_navigation();
 
-			get_template_part( 'inc/content', 'none' );
+	else :
 
-		endif; ?>
+		get_template_part( 'inc/content', 'none' );
 
-		</main>
-	</div>
+	endif; ?>
+</main>
+
 <?php
 get_sidebar();
 get_footer();

@@ -160,7 +160,7 @@ table.center th, table.center td { text-align: center; }
 
 .content-area th { font-weight: bold; color: #111; }
 
-.site-main .comment-navigation, .site-main .posts-navigation, .site-main .post-navigation { margin: 0 0 1.5em; overflow: hidden; }
+.content-area .comment-navigation, .content-area .posts-navigation, .content-area .post-navigation { margin: 0 0 1.5em; overflow: hidden; }
 
 .comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous { float: left; width: 50%; }
 
@@ -175,11 +175,11 @@ body, button, input, select, textarea { color: #404040; font-family: "Charter", 
 
 h1, h2, h3, h4, h5, h6 { clear: both; font-family: "Charter-Bold", Georgia, serif; font-weight: 400; line-height: 1.1; margin-bottom: 0.5rem; }
 
-h1 { font-size: 2.441rem; }
+h1 { font-size: 2.5rem; }
 
-h2 { font-size: 1.95rem; }
+h2 { font-size: 2.0rem; }
 
-h3 { font-size: 1.56rem; }
+h3 { font-size: 1.5rem; }
 
 h4 { font-size: 1.25rem; }
 
@@ -231,19 +231,14 @@ embed, iframe, object { max-width: 100%; }
 
 .wp-caption .wp-caption-text { margin: 0.8075em 0; }
 
-/* Ensure center-aligned captions center-align properly. */
 .wp-caption.aligncenter { margin-left: auto; margin-right: auto; }
 
-/* Give some padding to floated elements, to prevent them butting up against text. */
 .wp-caption.alignleft { margin-right: 20px; }
 
 .wp-caption.alignright { margin-left: 20px; }
 
 .wp-caption-text { text-align: center; }
 
-/*--------------------------------------------------------------
-## Galleries
---------------------------------------------------------------*/
 .gallery { margin-bottom: 1.5em; }
 
 .gallery-item { display: inline-block; text-align: center; vertical-align: top; width: 100%; }
@@ -268,28 +263,19 @@ embed, iframe, object { max-width: 100%; }
 
 .img-size-med { max-width: 480px; }
 
-div#masthead { max-width: 800px; margin: 0 auto; width: 100%; }
+div#masthead { max-width: 860px; margin: 0 auto; width: 100%; }
 
-main { max-width: 720px; margin: 0 auto; width: 100%; }
+main { max-width: 860px; margin: 0 auto; width: 100%; }
 
-/*-------------------------------------------------------------- ## Content Sidebar --------------------------------------------------------------*/
-.content-area { max-width: 100%; }
-
-.widget-area { max-width: 720px; width: 100%; margin: 0 auto; min-width: 160px; display: flex; flex-wrap: wrap; }
+.widget-area { max-width: 800px; width: 100%; margin: 0 auto; min-width: 160px; display: flex; flex-wrap: wrap; }
 
 section.widget { width: 320px; margin-right: 32px; padding-right: 32px; }
 
-/*-------------------------------------------------------------- ## Single Column / No Active Sidebar --------------------------------------------------------------*/
-.no-sidebar .site-main { margin: 0; }
+article { width: 100%; background-color: #FFFFFF; padding: 4% 8% 4% 8%; margin: 0 auto 32px auto; padding-bottom: 32px; }
 
-.no-sidebar .content-area { float: none; margin-left: auto; margin-right: auto; }
-
-/*-------------------------------------------------------------- ## Posts --------------------------------------------------------------*/
-article { max-width: 720px; width: 100%; }
+.single article { min-height: 50vh; }
 
 .sticky { display: block; }
-
-.hentry { margin: 0 auto; }
 
 .byline, .updated:not(.published) { display: none; }
 
@@ -299,7 +285,6 @@ article { max-width: 720px; width: 100%; }
 
 .entry-meta { font-size: 0.9rem; }
 
-/*-------------------------------------------------------------- ## Pages --------------------------------------------------------------*/
 .page-links { clear: both; margin: 0 0 1.5em; }
 
 .site-footer { margin-top: 64px; padding: 8px 0; background-color: #EBDBB2; }
@@ -342,17 +327,15 @@ div#masthead h4.site-description { margin: 4px 0 0 0; font-size: 16px; font-styl
 
 .main-navigation a:hover { color: #FB4934; }
 
-div.site-content { padding: 0 4%; }
+h1.entry-title, h2.entry-title { font-size: 2.0rem; margin-top: 4px; }
 
-h2.entry-title a, h2.entry-title a:visited { color: #404040; }
+h1.entry-title a, h1.entry-title a:visited, h2.entry-title a, h2.entry-title a:visited { color: #404040; }
 
-h2.entry-title a:hover { color: #FB4934; }
+h1.entry-title a:hover, h2.entry-title a:hover { color: #FB4934; }
 
-article { margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid #ccc; }
+ul.post-list { list-style: square; list-style-position: inside; margin: 0; padding: 0; }
 
-ul.post-list { list-style: square; list-style-position: inside; margin-left: 0; padding-left: 0; }
-
-h5.page-title { font-weight: 700; }
+h5.page-title { margin-top: 0; font-weight: 700; }
 
 .search-submit { margin-top: 8px; }
 

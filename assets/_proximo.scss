@@ -1,28 +1,106 @@
 
+div#masthead {
+	max-width: 860px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main {
+	max-width: 860px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.widget-area {
+	max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.widget {
+    width: 320px;
+    margin-right: 32px;
+    padding-right: 32px;
+}
+
+article {
+    width: 100%;
+	background-color: $color_background-content;
+	padding: 4% 8% 4% 8%;
+	margin: 0 auto 32px auto;
+	padding-bottom: 32px;
+}
+
+.single article {
+	min-height: 50vh;
+}
+
+.sticky {
+    display: block;
+}
+
+.byline,
+.updated:not(.published){
+    display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+    display: inline;
+}
+
+.entry-header {
+    margin-bottom: 8px;
+}
+
+.entry-meta {
+    font-size: 0.9rem;
+}
+
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+.site-footer {
+    margin-top: 64px;
+    padding: 8px 0;
+    background-color: #EBDBB2;
+}
+
+.site-info {
+    font-size: 13px;
+    padding: 4px 16px;
+}
+
 header.site-header {
     width: 100%;
     background-color: $color__header-background;
-  
+
     padding: 16px $side-padding;
     margin-bottom: 32px;
     border-bottom: $border-struct-style;
   }
-  
+
   div#masthead {
     max-width: 800px;
     display: flex;
     justify-content: space-between;
-  
+
     div.site-branding {
       min-width: 360px;
       width: 100%;
     }
-  
+
     .logo {
       width: 24px;
       height: 24px;
     }
-  
+
     h3.site-title {
       display: inline-block;
       font-family: $font__headers;
@@ -30,7 +108,7 @@ header.site-header {
       font-size: 36px;
       margin: 0px 0px 0px 4px;
       color: $color__header-title;
-  
+
       a, a:visited {
         color: $color__header-title;
       }
@@ -38,7 +116,7 @@ header.site-header {
         color: $color__link-hover;
       }
     }
-  
+
     h4.site-description {
       margin: 4px 0 0 0;
       font-size: 16px;
@@ -48,18 +126,18 @@ header.site-header {
       color: #AAA;
     }
   }
-  
+
 
   .main-navigation {
     display: block;
     min-width: 240px;
-  
+
     ul {
       display: block;
       list-style: none;
       margin: 0;
       padding-left: 0;
-  
+
       ul {
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
         float: left;
@@ -67,35 +145,35 @@ header.site-header {
         top: 1.5em;
         left: -999em;
         z-index: 99999;
-  
+
         ul {
           left: -999em;
           top: 0;
         }
-  
+
         li {
           &:hover > ul,
           &.focus > ul {
             left: 100%;
           }
         }
-  
+
         a {
           width: 200px;
         }
       }
-  
+
       li:hover > ul,
       li.focus > ul {
         left: auto;
       }
     }
-  
+
     li {
       display: inline-block;
       margin-right: 16px;
     }
-  
+
     a {
       display: inline-block;
       text-decoration: none;
@@ -105,35 +183,31 @@ header.site-header {
       color: $color__link-hover;
     }
   }
-  
-  
-div.site-content {
-    padding: 0 $side-padding;
-}
 
+h1.entry-title,
 h2.entry-title {
+	font-size: 2.0rem;
+
     a, a:visited {
         color: $color__text-main;
     }
     a:hover {
         color: $color__link-hover;
     }
+
+	margin-top: 4px;
 }
 
-article {
-    margin-bottom: 32px;
-    padding-bottom: 32px;
-    border-bottom: $border-struct-style;
-}
 
 ul.post-list {
     list-style: square;
     list-style-position: inside;
-    margin-left: 0;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
 }
 
 h5.page-title {
+	margin-top: 0;
     font-weight: 700;
 }
 
@@ -157,28 +231,27 @@ h5.page-title {
     margin: 24px 0;
     padding-bottom: 24px;
     /* border-bottom: $border-struct-style; */
-  
+
     select {
       max-width: 100%;
     }
-  
+
     h2.widget-title {
       font-size: 18px;
       margin-bottom: 0px;
     }
-  
+
     ul {
       margin: 0;
       padding: 0;
       list-style: square;
       list-style-position: inside;
     }
-  
+
     li {
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
     }
   }
-  
-  
+

@@ -444,8 +444,7 @@ table.center td {
 .posts-navigation,
 .post-navigation {
 
-
-    .site-main & {
+    .content-area & {
         margin: 0 0 1.5em;
         overflow: hidden;
     }
@@ -491,9 +490,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5rem;
 }
 
-h1 { font-size: 2.441rem; }
-h2 { font-size: 1.95rem; }
-h3 { font-size: 1.56rem; }
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2.0rem; }
+h3 { font-size: 1.5rem; }
 h4 { font-size: 1.25rem; }
 h5 { font-size: 1.15rem; }
 h6 { font-size: 1.00rem; }
@@ -609,13 +608,11 @@ object {
     }
 }
 
-/* Ensure center-aligned captions center-align properly. */
 .wp-caption.aligncenter {
         margin-left: auto;
         margin-right: auto;
 }
 
-/* Give some padding to floated elements, to prevent them butting up against text. */
 .wp-caption.alignleft {
         margin-right: 20px;
 }
@@ -628,9 +625,6 @@ object {
     text-align: center;
 }
 
-/*--------------------------------------------------------------
-## Galleries
---------------------------------------------------------------*/
 .gallery {
     margin-bottom: 1.5em;
 }
@@ -682,105 +676,3 @@ object {
     max-width: 480px;
 }
 
-
-div#masthead {
-    max-width: 800px;
-    margin: 0 auto;
-    width: 100%;
-  }
-  
-  main {
-    max-width: 720px;
-    margin: 0 auto;
-    width: 100%;
-  }
-  
-  /*--------------------------------------------------------------
-  ## Content Sidebar
-  --------------------------------------------------------------*/
-  
-  .content-area {
-    max-width: 100%;
-  }
-  
-  .widget-area {
-    max-width: 720px;
-    width: 100%;
-    margin: 0 auto;
-    min-width: 160px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  section.widget {
-    width: 320px;
-    margin-right: 32px;
-    padding-right: 32px;
-  }
-  
-  /*--------------------------------------------------------------
-  ## Single Column / No Active Sidebar
-  --------------------------------------------------------------*/
-  .no-sidebar .site-main {
-    margin: 0;
-  }
-  
-  .no-sidebar .content-area {
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /*--------------------------------------------------------------
-  ## Posts
-  --------------------------------------------------------------*/
-  
-  article {
-    max-width: 720px;
-    width: 100%;
-  }
-  
-  .sticky {
-    display: block;
-  }
-  
-  .hentry {
-    margin: 0 auto;
-  }
-  
-  .byline,
-  .updated:not(.published){
-    display: none;
-  }
-  
-  .single .byline,
-  .group-blog .byline {
-    display: inline;
-  }
-  
-  .entry-header {
-    margin-bottom: 8px;
-  }
-  
-  .entry-meta {
-    font-size: 0.9rem;
-  }
-  
-  
-  /*--------------------------------------------------------------
-  ## Pages
-  --------------------------------------------------------------*/
-  .page-links {
-    clear: both;
-    margin: 0 0 1.5em;
-  }
-  
-  .site-footer {
-    margin-top: 64px;
-    padding: 8px 0;
-    background-color: #EBDBB2;
-  }
-  .site-info {
-    font-size: 13px;
-    padding: 4px 16px;
-  }
