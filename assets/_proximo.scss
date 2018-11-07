@@ -214,17 +214,17 @@ header.site-header {
 
 h1.entry-title,
 h2.entry-title {
+
 	font-size: 2.0rem;
 
     a, a:visited {
         color: $color__text-main;
     }
+
     a:hover {
         color: $color__link-hover;
     }
 
-	margin-top: 4px;
-	padding-left: 4px;
 }
 
 

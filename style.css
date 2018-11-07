@@ -175,9 +175,9 @@ body, button, input, select, textarea { color: #404040; font-family: "Charter", 
 
 h1, h2, h3, h4, h5, h6 { clear: both; font-family: "Charter-Bold", Georgia, serif; font-weight: 400; line-height: 1.1; margin-bottom: 0.5rem; }
 
-h1 { font-size: 2.5rem; }
+h1 { font-size: 2.0rem; }
 
-h2 { font-size: 2.0rem; }
+h2 { font-size: 1.8rem; }
 
 h3 { font-size: 1.5rem; }
 
@@ -337,7 +337,7 @@ div#masthead h4.site-description { margin: 4px 0 0 0; font-size: 16px; font-styl
 
 @media (max-width: 600px) { .main-navigation { display: none; } }
 
-h1.entry-title, h2.entry-title { font-size: 2.0rem; margin-top: 4px; padding-left: 4px; }
+h1.entry-title, h2.entry-title { font-size: 2.0rem; }
 
 h1.entry-title a, h1.entry-title a:visited, h2.entry-title a, h2.entry-title a:visited { color: #404040; }
 
