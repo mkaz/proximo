@@ -1,0 +1,40 @@
+
+/* Gutenberg editor style */
+
+body {
+	color: #404040;
+	font-family: Charter, Georgia, serif;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.wp-block {
+    max-width: 720px;
+}
+
+p {
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Charter, Georgia, serif;
+}
+
+h1 { font-size: 2.0rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.15rem; }
+h6 { font-size: 1.00rem; }
+
+
+.editor-post-title__block .editor-post-title__input {
+	font-family: Charter, Georgia, serif;
+	font-size: 2.0rem;
+}
