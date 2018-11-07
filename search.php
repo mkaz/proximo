@@ -26,7 +26,7 @@ if ( have_posts() ) : ?>
 		endwhile; ?>
 	</ul>
 	<?php
-	the_posts_navigation();
+	proximo_pagination();
 
 else :
 

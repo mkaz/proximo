@@ -78,7 +78,7 @@ add_action( 'after_setup_theme', 'proximo_setup' );
  * @global int $content_width
  */
 function proximo_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'proximo_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'proximo_content_width', 720);
 }
 add_action( 'after_setup_theme', 'proximo_content_width', 0 );
 
@@ -110,4 +110,4 @@ function proximo_scripts() {
 add_action( 'wp_enqueue_scripts', 'proximo_scripts' );
 
 require get_template_directory() . '/inc/template-tags.php';
-
+require get_template_directory() . '/inc/pagination.php';
