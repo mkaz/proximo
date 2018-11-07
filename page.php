@@ -15,6 +15,7 @@
 get_header(); ?>
 
 <main id="main" class="content-area" role="main">
+<h5 class="page-title"> &nbsp; </h5>
 
 	<?php
 	while ( have_posts() ) : the_post();

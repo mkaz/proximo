@@ -5,13 +5,29 @@ main {
     width: 100%;
 }
 
+.footer-widgets {
+	width: 100%;
+	margin-top: 64px;
+	padding: 32px 64px;
+	background-color: $color_footer_background;
+	color: #FFF;
+}
+
 .widget-area {
-	max-width: 800px;
+	max-width: 860px;
     width: 100%;
     margin: 0 auto;
-    min-width: 160px;
+	min-width: 160px;
     display: flex;
     flex-wrap: wrap;
+
+	a, a:visited {
+		color: $color_footer_link;
+	}
+
+	a:hover {
+		color: $color__link_hover;
+	}
 }
 
 section.widget {
@@ -61,10 +77,19 @@ article {
 }
 
 .site-footer {
-    margin-top: 64px;
     padding: 8px 0;
-    background-color: #EBDBB2;
+	color: $color_footer_text;
+    background-color: $color__header-background;
+
+	a, a:visited {
+		color: $color_footer_link;
+	}
+
+	a:hover {
+		color: $color__link_hover;
+	}
 }
+
 
 .site-info {
     font-size: 13px;
@@ -235,7 +260,6 @@ h5.page-title {
 
     margin: 24px 0;
     padding-bottom: 24px;
-    /* border-bottom: $border-struct-style; */
 
     select {
       max-width: 100%;
