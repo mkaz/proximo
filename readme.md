@@ -1,6 +1,8 @@
 This file is recommended.
 
-<img src="screenshot.png" title="Theme Screenshot"/>
+## Theme Preview
+
+<img src="screenshot.png" title="Theme Screenshot" width="600"/>
 
 
 ##  Build
