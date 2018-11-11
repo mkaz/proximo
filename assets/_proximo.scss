@@ -291,9 +291,15 @@ h5.page-title {
 	margin-right: -16%;
 }
 
-/* Gutenberg styles */
 .wp-block-image.alignwide {
 	max-width: none;
+	margin-left: -8%;
+	margin-right: -8%;
+}
+
+.wp-block-cover,
+.wp-block-cover-image {
+	width: inherit;
 	margin-left: -8%;
 	margin-right: -8%;
 }
