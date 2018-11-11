@@ -303,3 +303,22 @@ h5.page-title {
 	margin-left: -8%;
 	margin-right: -8%;
 }
+
+.wp-block-quote {
+	font-family: Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 90%;
+	border-left: 4px solid #000;
+    padding-left: 1em;
+	color: #666666;
+}
+
+
+.wp-block-quote cite, .wp-block-quote footer, .wp-block-quote__citation {
+	font-family: Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 0.90rem;
+	font-style: normal;
+	color: #666666;
+}
