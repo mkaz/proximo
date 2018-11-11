@@ -282,5 +282,18 @@ h5.page-title {
       white-space: nowrap;
       overflow: hidden;
     }
-  }
+}
 
+/* Gutenberg styles */
+.wp-block-image.alignfull {
+	max-width: none;
+	margin-left: -16%;
+	margin-right: -16%;
+}
+
+/* Gutenberg styles */
+.wp-block-image.alignwide {
+	max-width: none;
+	margin-left: -8%;
+	margin-right: -8%;
+}

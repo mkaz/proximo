@@ -39,6 +39,8 @@ function proximo_setup() {
     // Enqueue editor styles
     add_editor_style( 'style-editor.css' );
 
+    add_theme_support( 'align-wide' );
+    add_theme_support( 'align-full' );
 }
 endif;
 add_action( 'after_setup_theme', 'proximo_setup' );

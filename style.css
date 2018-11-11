@@ -370,6 +370,12 @@ h5.page-title { margin-top: 0; font-weight: 700; padding-left: 4px; }
 
 .widget li { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
 
+/* Gutenberg styles */
+.wp-block-image.alignfull { max-width: none; margin-left: -16%; margin-right: -16%; }
+
+/* Gutenberg styles */
+.wp-block-image.alignwide { max-width: none; margin-left: -8%; margin-right: -8%; }
+
 .navigation ul { margin: 0; }
 
 .navigation li a, .navigation li a:hover, .navigation li.active a, .navigation li.disabled { color: #fff; text-decoration: none; }
