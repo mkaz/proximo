@@ -30,6 +30,9 @@
                     <?php bloginfo( 'name' ); ?>
                 </a>
             </h3>
+            <?php if ( ! empty( get_bloginfo( 'description' ) ) ) : ?>
+                <h4 class="site-description"><?php bloginfo( 'description'); ?></h4>
+            <?php endif; ?>
         </div>
 
         <nav id="site-navigation" class="main-navigation header-text-color" role="navigation">
