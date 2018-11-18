@@ -16,14 +16,34 @@ $proximo_color_choices = array (
         'label' => 'Gruvvy',
         'colors' => array( '#F5F5F5', '#404040', '#005DAC', '#282828', '#FE8019' )
     ),
-    'purple' => array(
-        'label' => 'Purple',
-        'colors' => array( '#29274c', '#7e52a0', '#d295bf', '#e6bccd' )
+    'chino' => array(
+        'label' => 'Chino',
+        'colors' => array( '#EAD2AC', '#404040', '#9CAFB7', '#4281A4', '#FEF3FC' )
+    ),
+    'nelly' => array(
+        'label' => 'Nelly',
+        'colors' => array( '#FFA5A5', '#443344', '#EC368D', '#440381', '#51E5FF' )
+    ),
+    'coral' => array(
+        'label' => 'Coral',
+        'colors' => array( '#3FEEE6', '#333333', '#FC4445', '#FC4445', '#111111' )
+    ),
+    'maroon' => array(
+        'label' => 'Maroon',
+        'colors' => array( '#E3E2DF', '#5D001E', '#FC4445', '#5D001E', '#9A17501' )
     ),
     'slate' => array(
         'label' => 'Slate',
-        'colors' => array( '#b9bbbb', '#a2a3bb', '#5e5f87', '#b3b7ee', '#fbf9ff' )
-    )
+        'colors' => array( '#8DA6CE', '#333333', '#FF6400', '#0F152B', '#FBDE2D' )
+    ),
+    'candy' => array(
+        'label' => 'Candy',
+        'colors' => array( '#FF3A83', '#333333', '#EB36BD', '#D785F7', '#FFFFFF' )
+    ),
+    'cafe' => array(
+        'label' => 'Cafe',
+        'colors' => array( '#8F7E65', '#89360A', '#89360A', '#4B3516', '#CBAD25' )
+    ),
 );
 
 function proximo_customize_register( $wp_customize ) {
