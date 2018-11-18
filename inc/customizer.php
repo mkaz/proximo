@@ -30,7 +30,7 @@ $proximo_color_choices = array (
     ),
     'maroon' => array(
         'label' => 'Maroon',
-        'colors' => array( '#E3E2DF', '#5D001E', '#FC4445', '#5D001E', '#9A17501' )
+        'colors' => array( '#E3E2DF', '#5D001E', '#FC4445', '#5D001E', '#9A1750' )
     ),
     'slate' => array(
         'label' => 'Slate',
@@ -218,3 +218,16 @@ function proximo_color_palette_control_class() {
     }
 }
 add_action( 'customize_register', 'proximo_color_palette_control_class', 9 );
+
+
+/**
+ * Load customizer controls script.
+ */
+function proximo_customizer_js() {
+    // output color choices to JS
+    global $proximo_color_choices;
+    printf( '<script> var proximo_color_choices = %s; </script>', wp_json_encode( $proximo_color_choices ) );
+
+	wp_enqueue_script( 'proximo-customize-controls', get_theme_file_uri( '/assets/js/customize-controls.js' ), array( 'jquery' ), '1.0', true );
+}
+add_action( 'customize_controls_enqueue_scripts', 'proximo_customizer_js' );
