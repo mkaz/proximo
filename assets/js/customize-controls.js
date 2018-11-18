@@ -10,7 +10,7 @@
                 if ( ! ( val in proximo_color_choices ) ) { return; }
                 let colors = proximo_color_choices[ val ].colors;
                 wp.customize.control.each( c => {
-                    if ( c.id === "background_color") {
+                    if ( c.id === "bg_color") {
                         c.setting.set( colors[0] );
                     } else if ( c.id === "text_color" ) {
                         c.setting.set( colors[1] );

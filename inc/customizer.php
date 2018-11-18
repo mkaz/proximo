@@ -66,12 +66,12 @@ function proximo_customize_register( $wp_customize ) {
     ) ) );
 
     // Background color
-    $wp_customize->add_setting( 'background_color', array(
+    $wp_customize->add_setting( 'bg_color', array(
         'default'   => $proximo_color_choices['gruvvy']['colors'][0],
         'transport' => 'refresh',
     ) );
 
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'background_color', array(
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'bg_color', array(
         'section' => 'colors',
         'label'   => esc_html__( 'Background', 'proximo' ),
     ) ) );
@@ -80,6 +80,7 @@ function proximo_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'text_color', array(
         'default'   => $proximo_color_choices['gruvvy']['colors'][1],
         'transport' => 'refresh',
+        'sanitize_callback' => 'sanitize_hex_color',
     ) );
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'text_color', array(
@@ -131,7 +132,7 @@ function proximo_color_palette_callback( $color ) {
         return $color;
     }
     $colors = $proximo_color_choices[ $color ]['colors'];
-    set_theme_mod( 'background_color', $colors[0] );
+    set_theme_mod( 'bg_color', $colors[0] );
     set_theme_mod( 'text_color', $colors[1] );
     set_theme_mod( 'link_color', $colors[2] );
     set_theme_mod( 'header_background', $colors[3] );
@@ -155,7 +156,7 @@ function proximo_get_customizer_css() {
     ob_start();
     ?>
     body {
-        <?php proximo_css_customizer_helper( 'background-color', 'background_color' ); ?>;
+        <?php proximo_css_customizer_helper( 'background-color', 'bg_color' ); ?>;
         <?php proximo_css_customizer_helper( 'color', 'text_color' ); ?>;
     }
 
