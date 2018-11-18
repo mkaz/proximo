@@ -260,17 +260,17 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-    color: $color__text-input;
-    border: 1px solid $color__border-input;
+    color: $color_text-input;
+    border: 1px solid $color_border-input;
     border-radius: 3px;
 
     &:focus {
-        color: $color__text-input-focus;
+        color: $color_text-input-focus;
     }
 }
 
 select {
-    border: 1px solid $color__border-input;
+    border: 1px solid $color_border-input;
 }
 
 input[type="text"],
@@ -301,9 +301,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     border: 1px solid;
-    border-color: $color__border-button;
+    border-color: $color_border-button;
     border-radius: 3px;
-    background: $color__background-button;
+    background: $color_background-button;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
     color: rgba(0, 0, 0, .8);
     font-size: 0.75rem;
@@ -312,13 +312,13 @@ input[type="submit"] {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 
     &:hover {
-        border-color: $color__border-button-hover;
+        border-color: $color_border-button-hover;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
     }
 
     &:active,
     &:focus {
-        border-color: $color__border-button-focus;
+        border-color: $color_border-button-focus;
         box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
     }
 }
@@ -329,7 +329,7 @@ input[type="submit"] {
 }
 
 hr {
-    background-color: $color__background-hr;
+    background-color: $color_background-hr;
     border: 0;
     height: 1px;
     margin-bottom: 1.5em;
@@ -388,8 +388,8 @@ table.code {
     empty-cells: show;
 
     th, td {
-        font-family: $font__code;
-        font-size: 12px;
+        font-family: $font_code;
+        font-size: $font_code_size;
         padding: 4px 32px 4px 0;
         line-height: 1.1rem;
     }
@@ -507,15 +507,15 @@ button,
 input,
 select,
 textarea {
-    color: $color__text-main;
-    font-family: $font__main;
-    font-size: $font__main_size;
-    line-height: $font__line-height-body;
+    color: $color_text-main;
+    font-family: $font_main;
+    font-size: $font_main_size;
+    line-height: $font_line-height-body;
 }
 
 h1, h2, h3, h4, h5, h6 {
     clear: both;
-    font-family: $font__headers;
+    font-family: $font_headers;
     font-weight: 400;
     line-height: 1.1;
     margin-bottom: 0.5rem;
@@ -544,10 +544,10 @@ pre {
     border: 1px solid #E2E4E7;
     border-radius: 4px;
     background-color: none;
-    color: #282838;
-    font-family: $font__code;
-    font-size: 14px;
-    line-height: $font__line-height-code;
+    color: $font_code_color;
+    font-family: $font_code;
+    font-size: $font_code_size;
+    line-height: $font_code_line-height;
     margin-bottom: 1.6em;
     max-width: 100%;
     overflow: auto;
@@ -555,18 +555,18 @@ pre {
 }
 
 code, kbd, tt, var {
-    color: #282838;
-    font-family: $font__code;
-    font-size: 14px;
+    color: $font_code_color;
+    font-family: $font_code;
+    font-size: $font_code_size;
 }
 
 abbr, acronym {
-    border-bottom: 1px dotted $color__border-abbr;
+    border-bottom: 1px dotted $color_border-abbr;
     cursor: help;
 }
 
 mark, ins {
-    background: $color__background-ins;
+    background: $color_background-ins;
     text-decoration: none;
 }
 
@@ -585,16 +585,16 @@ blockquote, q {
 }
 
 a {
-    color: $color__link;
+    color: $color_link;
     text-decoration: none;
 
     &:visited {
-        color: $color__link-visited;
+        color: $color_link-visited;
     }
     &:hover,
     &:focus,
     &:active {
-        color: $color__link-hover;
+        color: $color_link-hover;
     }
     &:focus {
         outline: thin dotted;

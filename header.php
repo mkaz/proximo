@@ -23,19 +23,17 @@
 
 <body <?php body_class(); ?>>
 
-    <header id="masthead" class="site-header" role="banner">
-        <div id="masthead">
-            <div class="site-branding">
-                <h3 class="site-title">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                        <?php bloginfo( 'name' ); ?>
-                    </a>
-                </h3>
-            </div>
-
-            <nav id="site-navigation" class="main-navigation" role="navigation">
-                <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'top-menu' ) ); ?>
-            </nav>
+    <header id="masthead" class="site-header header-background-color" role="banner">
+        <div class="site-branding">
+            <h3 class="site-title header-text-color">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                    <?php bloginfo( 'name' ); ?>
+                </a>
+            </h3>
         </div>
+
+        <nav id="site-navigation" class="main-navigation header-text-color" role="navigation">
+            <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'top-menu' ) ); ?>
+        </nav>
     </header>
     <div id="content" class="site-content">

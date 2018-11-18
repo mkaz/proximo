@@ -1,11 +1,13 @@
 
 .PHONY: watch
 watch:
-	node-sass -w --output-style compact -o ./ ./assets/style.scss
+	node-sass -w --output-style compact -o ./ ./assets/style.scss &
+	node-sass -w --output-style compact -o ./ ./assets/style-editor.scss &
 
 .PHONY: build
 build:
 	node-sass --output-style compact -o ./ ./assets/style.scss
+	node-sass --output-style compact -o ./ ./assets/style-editor.scss
 
 .PHONY: publish
 publish: build

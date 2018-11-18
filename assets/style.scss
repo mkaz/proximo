@@ -14,50 +14,304 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-$color_background: #F5F5F5;
-$color_background_content: #FFFFFF;
-
-$color__background-hr: #ccc;
-$color__background-button: #e6e6e6;
-$color__background-code: #F3F3F3;
-$color__background-ins: #fff9c0;
-
-$color__text-screen: #21759b;
-$color__text-input: #666;
-$color__text-input-focus: #111;
-$color__link: #005DAC;
-$color__link-visited:#005DAC;
-$color__link-hover: #FB4934;
-$color__text-main: #404040;
-
-$color__border-button: #ccc #ccc #bbb;
-$color__border-button-hover: #ccc #bbb #aaa;
-$color__border-button-focus: #aaa #bbb #bbb;
-$color__border-input: #ccc;
-$color__border-abbr: #666;
-
-$color__header-background: #282828;
-$color__header-title: #FE8019;
-$color__header-nav: #FABD2F;
-
-$color_footer_background: #444444;
-$color_footer_text: #FFFFFF;
-$color_footer_link: #FABD2F;
-
-//$font__main: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", sans-serif;
-$font__main: "Charter", Georgia, serif;
-$font__main_size: 20px;
-$font__headers: "Charter-Bold", Georgia, serif;
-$font__code: Menlo, Consolas, moncaso, monospace;
-$font__line-height-body: 1.5;
-$font__line-height-code: 1.6;
-
-$breakpoint_tablet: 37.5em;
-
-$side-padding: 4%;
-$border-struct-style: 1px solid #ccc;
-
+@import "variables";
 @import "base";
-@import "proximo";
 @import "pagination";
+@import "block-quote";
 
+main {
+    max-width: 860px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-widgets {
+    width: 100%;
+    margin-top: 64px;
+    padding: 32px 64px;
+    background-color: $color_footer_background;
+    color: #FFF;
+}
+
+.widget-area {
+    max-width: 860px;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+
+    a, a:visited {
+        color: $color_footer_link;
+    }
+
+    a:hover {
+        color: $color_link_hover;
+    }
+}
+
+section.widget {
+    width: 320px;
+    margin-right: 32px;
+    padding-right: 32px;
+}
+
+article {
+    width: 100%;
+    background-color: $color_background-content;
+    padding: 4% 8% 4% 8%;
+    margin: 0 auto 32px auto;
+    padding-bottom: 32px;
+}
+
+.single article {
+    min-height: 50vh;
+}
+
+.sticky {
+    display: block;
+}
+
+.byline,
+.updated:not(.published){
+    display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+    display: inline;
+}
+
+.entry-header {
+    margin-bottom: 8px;
+}
+
+.entry-meta {
+    font-size: 0.9rem;
+}
+
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+.site-footer {
+    padding: 8px 0;
+}
+
+
+.site-info {
+    font-size: 13px;
+    padding: 4px 16px;
+}
+
+.header-background-color {
+    background-color: $header-background-color;
+}
+
+.header-text-color,
+.header-text-color a,
+.header-text-color a:visited {
+    color: $header-text-color;
+}
+
+.header-text-color a:hover {
+    color: $color_link-hover;
+}
+
+.site-header {
+    width: 100%;
+
+    margin: 0 auto 32px auto;
+    padding: 16px 0;
+    border-bottom: $border-struct-style;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-branding {
+    min-width: 360px;
+      max-width: 860px;
+    width: 100%;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+}
+
+.site-title {
+    display: inline-block;
+    font-family: $font_headers;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0px 0px 0px 4px;
+    color: $header-text-color;
+}
+
+.site-description {
+  margin: 4px 0 0 0;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  text-transform: lowercase;
+  color: #AAA;
+}
+
+
+.main-navigation {
+    display: block;
+    min-width: 240px;
+    text-align: right;
+
+    ul {
+      display: block;
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+
+      ul {
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        float: left;
+        position: absolute;
+        top: 1.5em;
+        left: -999em;
+        z-index: 99999;
+
+        ul {
+          left: -999em;
+          top: 0;
+        }
+
+        li {
+          &:hover > ul,
+          &.focus > ul {
+            left: 100%;
+          }
+        }
+
+        a {
+          width: 200px;
+        }
+      }
+
+      li:hover > ul,
+      li.focus > ul {
+        left: auto;
+      }
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 16px;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: $header-text-color;
+    }
+    a:hover {
+      color: $color_link-hover;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-navigation {
+        display: none;
+    }
+}
+
+h1.entry-title,
+h2.entry-title {
+
+    font-size: 2.0rem;
+
+    a, a:visited {
+        color: $color_text-main;
+    }
+
+    a:hover {
+        color: $color_link-hover;
+    }
+
+}
+
+
+ul.post-list {
+    list-style: square;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+h5.page-title {
+    margin-top: 0;
+    font-weight: 700;
+    padding-left: 4px;
+}
+
+.search-submit {
+    margin-top: 8px;
+}
+
+.sharedaddy {
+    margin: 32px 0 16px 0;
+}
+
+.comment-content a {
+    word-wrap: break-word;
+}
+.bypostauthor {
+    display: block;
+}
+
+.widget {
+
+    margin: 24px 0;
+    padding-bottom: 24px;
+
+    select {
+      max-width: 100%;
+    }
+
+    h2.widget-title {
+      font-size: 18px;
+      margin-bottom: 0px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: square;
+      list-style-position: inside;
+    }
+
+    li {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+}
+
+/* Gutenberg styles */
+.wp-block-image.alignfull {
+    max-width: none;
+    margin-left: -16%;
+    margin-right: -16%;
+}
+
+.wp-block-image.alignwide {
+    max-width: none;
+    margin-left: -8%;
+    margin-right: -8%;
+}
+
+.wp-block-cover,
+.wp-block-cover-image {
+    width: inherit;
+    margin-left: -8%;
+    margin-right: -8%;
+}
