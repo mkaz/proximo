@@ -16,6 +16,8 @@ $proximo_color_fields = array(
     'header_background' => 'Header Background',
     'header_text_color' => 'Header Text',
     'content_background' => 'Content Background',
+    'widgets_background' => 'Widgets Background',
+    'widgets_text_color' => 'Widgets Text',
 );
 
 $proximo_color_choices = array (
@@ -28,6 +30,8 @@ $proximo_color_choices = array (
             'header_background' => '#282828',
             'header_text_color' => '#FE8019',
             'content_background' => '#FFFFFF',
+            'widgets_background' => '#444444',
+            'widgets_text_color' => '#FFFFFF',
         )
     ),
     'chino' => array(
@@ -39,6 +43,8 @@ $proximo_color_choices = array (
             'header_background' => '#4281A4',
             'header_text_color' => '#FEF3FC',
             'content_background' => '#FFFFFF',
+            'widgets_background' => '#444444',
+            'widgets_text_color' => '#FFFFFF',
         )
     ),
     'bauhaus' => array(
@@ -50,17 +56,21 @@ $proximo_color_choices = array (
             'header_background' => '#FCDC08',
             'header_text_color' => '#648173',
             'content_background' => '#FCF3EA',
+            'widgets_background' => '#C77121',
+            'widgets_text_color' => '#FFFFFF',
         )
     ),
     'marly' => array(
         'label' => 'Marly',
         'colors' => array(
-            'bg_color' => '#987EBC',
+            'bg_color' => '#5B95EA',
             'text_color' => '#333333',
             'link_color' => '#E678AC',
-            'header_background' => '#07084C',
+            'header_background' => '#3C268B',
             'header_text_color' => '#ED9BD3',
-            'content_background' => '#FFFFFF',
+            'content_background' => '#FFF0F9',
+            'widgets_background' => '#3C268B',
+            'widgets_text_color' => '#D161B5',
         )
     ),
     'maroon' => array(
@@ -72,6 +82,8 @@ $proximo_color_choices = array (
             'header_background' => '#5D001E',
             'header_text_color' => '#9A1750',
             'content_background' => '#FFFFFF',
+            'widgets_background' => '#444444',
+            'widgets_text_color' => '#FFFFFF',
         )
     ),
     'slate' => array(
@@ -83,6 +95,8 @@ $proximo_color_choices = array (
             'header_background' => '#0F152B',
             'header_text_color' => '#FBDE2D',
             'content_background' => '#FFFFFF',
+            'widgets_background' => '#444444',
+            'widgets_text_color' => '#FFFFFF',
         )
     ),
     'candy' => array(
@@ -94,6 +108,8 @@ $proximo_color_choices = array (
             'header_background' => '#D785F7',
             'header_text_color' => '#FFFFFF',
             'content_background' => '#FFFFFF',
+            'widgets_background' => '#444444',
+            'widgets_text_color' => '#FFFFFF',
         )
     ),
     'cafe' => array(
@@ -105,6 +121,8 @@ $proximo_color_choices = array (
             'header_background' => '#4B3516',
             'header_text_color' => '#CBAD25',
             'content_background' => '#FFFFFF',
+            'widgets_background' => '#444444',
+            'widgets_text_color' => '#FFFFFF',
         )
     ),
 );

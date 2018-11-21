@@ -94,6 +94,10 @@ function proximo_get_customizer_css() {
         <?php proximo_css_customizer_helper( 'background-color', 'content_background' ); ?>;
     }
 
+    .footer-widgets {
+        <?php proximo_css_customizer_helper( 'background-color', 'widgets_background' ); ?>;
+        <?php proximo_css_customizer_helper( 'color', 'widgets_text_color' ); ?>;
+    }
     <?php
     $css = ob_get_clean();
     return $css;
