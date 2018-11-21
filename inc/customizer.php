@@ -90,6 +90,10 @@ function proximo_get_customizer_css() {
         <?php proximo_css_customizer_helper( 'color', 'header_text_color' ); ?>;
     }
 
+    article {
+        <?php proximo_css_customizer_helper( 'background-color', 'content_background' ); ?>;
+    }
+
     <?php
     $css = ob_get_clean();
     return $css;
