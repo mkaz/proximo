@@ -6,7 +6,17 @@
  *
  * @package Proximo
  */
+?>
 
 
-	the_title( '<li class="entry-title" id="post-<?php the_ID(); ?>" ><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></li>' );
+<ul class="post-list">
+<?php while ( have_posts() ) : the_post(); ?>
+    <li>
+        <span class="entry-title">
+            <?php the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' ); ?>
+        </span>
+    </li>
+<?php endwhile; ?>
+</ul>
 
+<?php proximo_pagination(); ?>

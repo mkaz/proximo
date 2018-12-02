@@ -83,13 +83,8 @@ add_action( 'widgets_init', 'proximo_widgets_init' );
 function proximo_scripts() {
 	wp_enqueue_style( 'proximo-style', get_stylesheet_uri(), filemtime( get_template_directory() . '/style.css' ) );
 	wp_enqueue_style( 'proximo-fonts', get_template_directory_uri() . '/webfonts/stylesheet.css', filemtime( get_template_directory() . '/webfonts/stylesheet.css' ) );
-
-    $custom_css = proximo_get_customizer_css();
-    wp_add_inline_style( 'proximo-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'proximo_scripts' );
 
-
 require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/pagination.php';
-require get_template_directory() . '/inc/customizer.php';

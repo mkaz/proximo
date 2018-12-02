@@ -13,31 +13,19 @@
  */
 
 get_header(); ?>
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		<header>
-			<h5 class="page-title">Articles</h5>
-		</header>
-		<?php
-		if ( have_posts() ) : ?>
-			<ul class="post-list">
-			<?php
-			while ( have_posts() ) : the_post();
-				get_template_part( 'inc/content', 'excerpt' );
-			endwhile; ?>
-			</ul>
-			<?php
-			proximo_pagination();
-
-		else :
-
-			get_template_part( 'inc/content', 'none' );
-
-		endif; ?>
-
-		</main>
-	</div>
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+            <header>
+                <h5 class="page-title">Articles</h5>
+            </header>
+            <?php
+            if ( have_posts() ) :
+                get_template_part( 'inc/content', 'list' );
+            else :
+                get_template_part( 'inc/content', 'none' );
+            endif; ?>
+        </main>
+    </div>
 <?php
 get_sidebar();
 get_footer();
