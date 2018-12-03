@@ -132,9 +132,9 @@ hr { background-color: #D0D4D9; border: 0; height: 1px; margin-bottom: 1.5em; }
 
 .aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
 
-.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after { content: ""; display: table; table-layout: fixed; }
+.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-footer:before, .site-footer:after { content: ""; display: table; table-layout: fixed; }
 
-.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after { clear: both; }
+.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-footer:after { clear: both; }
 
 table { margin: 0 0 1.5em; width: 100%; }
 
@@ -328,9 +328,11 @@ section.widget { max-width: 240px; margin-right: 64px; }
 
 .widget li { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
 
-.footer-widgets { width: 100%; margin-top: 64px; padding: 16px; background-color: #4A5056; color: #FFF; background-image: url("assets/footer-bg.svg"); }
+.footer-widgets { width: 100%; margin-top: 0; padding: 16px; background-color: #4A5056; color: #FFF; background-image: url("assets/footer-bg.svg"); }
 
-main { max-width: 860px; margin: 0 4%; width: 100%; }
+.wrapper { display: flex; justify-content: center; }
+
+main { max-width: 860px; padding: 0 4%; width: 100%; }
 
 article { width: 100%; padding: 0; margin-bottom: 32px; padding-bottom: 32px; }
 
@@ -348,9 +350,9 @@ article { width: 100%; padding: 0; margin-bottom: 32px; padding-bottom: 32px; }
 
 .page-links { clear: both; margin: 0 0 1.5em; }
 
-.site-footer { padding: 8px 0; }
+.site-footer { padding-bottom: 0; }
 
-.site-info { font-size: 13px; padding: 4px 16px; }
+.site-info { font-size: 13px; padding: 8px 16px; }
 
 .header-background-color { background-color: #212529; }
 
@@ -358,7 +360,7 @@ article { width: 100%; padding: 0; margin-bottom: 32px; padding-bottom: 32px; }
 
 .header-text-color a:hover { color: #FB4934; }
 
-.site-header { width: 100%; margin: 0 0 32px 0; padding: 16px 4%; border-bottom: 1px solid #ccc; display: flex; }
+.site-header { width: 100%; margin: 0 0 32px 0; padding: 16px 4%; border-bottom: 1px solid #ccc; display: flex; justify-content: center; }
 
 .site-branding { min-width: 360px; max-width: 620px; width: 100%; }
 

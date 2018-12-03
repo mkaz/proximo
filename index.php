@@ -32,7 +32,7 @@ get_header(); ?>
             </h5>
 		</header>
 
-		<section class="post-list">
+		<section class="post-list" aria-label="List of Posts">
 			<?php
 			while ( have_posts() ) : the_post();
 				get_template_part( 'inc/content', 'excerpt' );
@@ -48,6 +48,4 @@ get_header(); ?>
 	endif; ?>
 </main>
 
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer(); ?>

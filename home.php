@@ -11,9 +11,9 @@ $previous_year = 1970;
 
 ?>
 
-<main id="main" class="site-main content-area" role="main">
+<main id="main" class="content-area" role="main">
 
-    <section class="post-index">
+    <section class="post-index" aria-label="List of Posts by Year">
     <?php while ( have_posts() ) : the_post(); ?>
         <?php
         $current_year = get_the_date( 'Y' );
@@ -44,6 +44,4 @@ $previous_year = 1970;
 
 </main>
 
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer(); ?>
