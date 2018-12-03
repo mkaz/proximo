@@ -13,19 +13,41 @@
  */
 
 get_header(); ?>
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
-            <header>
-                <h5 class="page-title">Articles</h5>
-            </header>
-            <?php
-            if ( have_posts() ) :
-                get_template_part( 'inc/content', 'list' );
-            else :
-                get_template_part( 'inc/content', 'none' );
-            endif; ?>
-        </main>
-    </div>
+
+<main id="main" class="content-area" role="main">
+	<?php
+	if ( have_posts() ) : ?>
+
+		<header>
+            <h5 class="page-title">
+                <?php if ( is_search() ) : ?>
+                    <div class="highlight">
+                        <?php printf( esc_html( 'Search Results: %s' ), '<span>' . get_search_query() . '</span>' ); ?>
+                    </div>
+                <?php elseif ( is_archive() ) : ?>
+                    <?php the_archive_title(); ?>
+                <?php else: ?>
+                    Articles
+                <?php endif; ?>
+            </h5>
+		</header>
+
+		<section class="post-list">
+			<?php
+			while ( have_posts() ) : the_post();
+				get_template_part( 'inc/content', 'excerpt' );
+			endwhile; ?>
+        </section>
+		<?php
+		proximo_pagination();
+
+	else :
+
+		get_template_part( 'inc/content', 'none' );
+
+	endif; ?>
+</main>
+
 <?php
 get_sidebar();
 get_footer();

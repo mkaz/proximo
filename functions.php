@@ -41,6 +41,8 @@ function proximo_setup() {
 
     add_theme_support( 'align-wide' );
     add_theme_support( 'align-full' );
+
+    add_filter( 'excerpt_length', function( $length )  { return 30; } );
 }
 endif;
 add_action( 'after_setup_theme', 'proximo_setup' );

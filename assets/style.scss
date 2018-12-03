@@ -18,49 +18,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "base";
 @import "pagination";
 @import "block-quote";
+@import "post-list";
+@import "widgets";
 
 main {
     max-width: 860px;
-    margin: 0 auto;
+    margin: 0 4%;
     width: 100%;
-}
-
-.footer-widgets {
-    width: 100%;
-    margin-top: 64px;
-    padding: 32px 64px;
-    background-color: $color_footer_background;
-    color: #FFF;
-}
-
-.widget-area {
-    max-width: 860px;
-    width: 100%;
-    margin: 0 auto;
-    min-width: 160px;
-    display: flex;
-    flex-wrap: wrap;
-
-    a, a:visited {
-        color: $color_footer_link;
-    }
-
-    a:hover {
-        color: $color_link_hover;
-    }
-}
-
-section.widget {
-    width: 320px;
-    margin-right: 32px;
-    padding-right: 32px;
 }
 
 article {
     width: 100%;
-    background-color: $color_background-content;
-    padding: 4% 8% 4% 8%;
-    margin: 0 auto 32px auto;
+    padding: 0;
+    margin-bottom: 32px;
     padding-bottom: 32px;
 }
 
@@ -107,7 +77,7 @@ article {
 }
 
 .header-background-color {
-    background-color: $header-background-color;
+    background-color: $grey0;
 }
 
 .header-text-color,
@@ -122,18 +92,15 @@ article {
 
 .site-header {
     width: 100%;
-
-    margin: 0 auto 32px auto;
-    padding: 16px 0;
+    margin: 0 0 32px 0;
+    padding: 16px 4%;
     border-bottom: $border-struct-style;
-
     display: flex;
-    justify-content: space-between;
 }
 
 .site-branding {
     min-width: 360px;
-      max-width: 860px;
+    max-width: 620px;
     width: 100%;
 }
 
@@ -147,7 +114,7 @@ article {
     font-family: $font_headers;
     font-weight: 700;
     font-size: 36px;
-    margin: 0px 0px 0px 4px;
+    margin: 0;
     color: $header-text-color;
 }
 
@@ -230,27 +197,35 @@ h2.entry-title {
     font-size: 2.0rem;
 
     a, a:visited {
-        color: $color_text-main;
+        color: $grey1;
     }
 
     a:hover {
         color: $color_link-hover;
     }
-
 }
 
+h3.entry-title {
+    font-size: 1.4rem;
 
-ul.post-list {
-    list-style: square;
-    list-style-position: inside;
-    margin: 0;
-    padding: 0;
+    a, a:visited {
+        color: $grey1;
+    }
+
+    a:hover {
+        color: $color_link-hover;
+    }
 }
 
 h5.page-title {
     margin-top: 0;
     font-weight: 700;
-    padding-left: 4px;
+}
+
+.highlight {
+    padding: 6px 8px;
+    background-color: $accent5;
+    border-radius: 4px;
 }
 
 .search-submit {
@@ -268,33 +243,7 @@ h5.page-title {
     display: block;
 }
 
-.widget {
 
-    margin: 24px 0;
-    padding-bottom: 24px;
-
-    select {
-      max-width: 100%;
-    }
-
-    h2.widget-title {
-      font-size: 18px;
-      margin-bottom: 0px;
-    }
-
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: square;
-      list-style-position: inside;
-    }
-
-    li {
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-}
 
 /* Gutenberg styles */
 .wp-block-image.alignfull {

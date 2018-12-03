@@ -10,15 +10,21 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+    <header class="entry-header">
+        <?php
+            the_title(
+                sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>'
+            );
+        ?>
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-			<?php get_template_part( 'inc/content', 'meta' ); ?>
-		<?php endif; ?>
-	</header>
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div>
-	<?php get_template_part( 'inc/content', 'footer' ); ?>
+        <?php if ( 'post' === get_post_type() ) : ?>
+            <div class="entry-meta">
+                <?php proximo_posted_on(); ?>
+            </div>
+        <?php endif; ?>
+    </header>
+    <div class="entry-summary">
+        <?php the_excerpt(); ?>
+    </div>
+    <?php get_template_part( 'inc/content', 'footer' ); ?>
 </article>

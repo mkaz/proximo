@@ -1,0 +1,72 @@
+// homepage
+.post-index {
+    width: 100%;
+    list-style: none;
+    margin: 0 0 32px 0;
+    padding: 0;
+
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid $grey6;
+    }
+
+    li:last-child {
+        border-bottom: none;
+    }
+
+    .entry-title {
+        font-size: 1.2rem;
+        display: inline-block;
+        max-width: 360px;
+        width: 100%;
+        text-overflow: ellipsis;
+    }
+
+    .published {
+        display: inline-block;
+        max-width: 160px;
+        width: 100%;
+        font-size: 1.0rem;
+        color: $grey3;
+        text-align: right;
+    }
+
+    @media (max-width: 600px) {
+        .published {
+            display: none;
+        }
+    }
+}
+
+// all other list like pages
+.post-list {
+
+    max-width: 720px;
+    width: 100%;
+
+    article {
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid $grey6;
+    }
+
+    article:last-child {
+        border-bottom: none;
+    }
+
+    p {
+        margin: 0.5rem 0;
+        font-size: 1.0rem;
+    }
+
+    .entry-footer {
+        font-size: 1.0rem;
+    }
+}

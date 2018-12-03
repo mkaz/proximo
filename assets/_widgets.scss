@@ -1,0 +1,60 @@
+
+.widget-area {
+    max-width: 860px;
+    width: 100%;
+    margin: 0 4%;
+    min-width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+
+    a, a:visited {
+        color: $color_footer_link;
+    }
+
+    a:hover {
+        color: $color_link_hover;
+    }
+}
+
+section.widget {
+    max-width: 240px;
+    margin-right: 64px;
+}
+
+
+.widget {
+
+    margin: 24px 0;
+    padding-bottom: 24px;
+
+    select {
+      max-width: 100%;
+    }
+
+    h2.widget-title {
+      font-size: 18px;
+      margin-bottom: 0px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: square;
+      list-style-position: inside;
+    }
+
+    li {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+}
+
+.footer-widgets {
+    width: 100%;
+    margin-top: 64px;
+    padding: 16px;
+    background-color: $grey2;
+    color: #FFF;
+    background-image: url('assets/footer-bg.svg');
+}
