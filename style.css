@@ -318,17 +318,17 @@ img.wp-smiley, img.emoji { display: inline !important; border: none !important; 
 
 .wp-block-quote cite, .wp-block-quote footer, .wp-block-quote__citation { font-family: Helvetica, sans-serif; font-weight: 300; font-size: 0.90rem; font-style: normal; color: #666666; }
 
-.post-index { width: 100%; list-style: none; margin: 0 0 32px 0; padding: 0; }
+.post-index { max-width: 720px; width: 100%; list-style: none; margin: 0 0 32px 0; padding: 0; }
 
-.post-index ul { list-style: none; padding: 0; }
+.post-index ul { list-style: none; padding: 0; margin: 0; }
 
-.post-index li { margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #DFE2E5; }
+.post-index li { margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #DFE2E5; display: flex; }
 
 .post-index li:last-child { border-bottom: none; }
 
-.post-index .entry-title { font-size: 1.2rem; display: inline-block; max-width: 360px; width: 100%; text-overflow: ellipsis; }
+.post-index .entry-title { font-size: 1.2rem; display: inline-block; min-width: 360px; width: 100%; text-overflow: ellipsis; }
 
-.post-index .published { display: inline-block; max-width: 160px; width: 100%; font-size: 1.0rem; color: #878E95; text-align: right; }
+.post-index .published { display: inline-block; max-width: 160px; width: 100%; font-size: 1.0rem; color: #878E95; text-align: left; }
 
 @media (max-width: 600px) { .post-index .published { display: none; } }
 
