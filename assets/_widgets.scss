@@ -1,11 +1,18 @@
+.widgets {
+    width: 100%;
+    background-color: $grey1;
+    color: #FFF;
+}
 
 .widget-area {
     max-width: 860px;
+    min-width: 200px;
     width: 100%;
-    margin: 0 4%;
-    min-width: 160px;
+    margin: 0 auto;
+    padding: 0 4%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     a, a:visited {
         color: $color_footer_link;
@@ -16,14 +23,24 @@
     }
 }
 
-section.widget {
-    max-width: 240px;
-    margin-right: 64px;
+.search-bar {
+    width: 100%;
+    background-color: $grey2;
 }
 
+.search-form {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 16px 4%;
+}
+
+input.search-field {
+    max-width: 320px;
+    width: 100%;
+}
 
 .widget {
-
+    max-width: 340px;
     margin: 24px 0;
     padding-bottom: 24px;
 
@@ -48,13 +65,4 @@ section.widget {
       white-space: nowrap;
       overflow: hidden;
     }
-}
-
-.footer-widgets {
-    width: 100%;
-    margin-top: 0;
-    padding: 16px;
-    background-color: $grey2;
-    color: #FFF;
-    background-image: url('assets/footer-bg.svg');
 }

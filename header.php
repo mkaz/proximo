@@ -38,5 +38,9 @@
         <nav id="site-navigation" class="main-navigation header-text-color" role="navigation">
             <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'top-menu' ) ); ?>
         </nav>
+
     </header>
+    <section class="search-bar" role="search">
+        <?php get_search_form(); ?>
+    </section>
     <div id="content" class="wrapper">

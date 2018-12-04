@@ -18,8 +18,8 @@ get_header(); ?>
 	<?php
 	if ( have_posts() ) : ?>
 
-		<header>
-            <h5 class="page-title">
+		<header class="page-title">
+            <h5>
                 <?php if ( is_search() ) : ?>
                     <div class="highlight">
                         <?php printf( esc_html( 'Search Results: %s' ), '<span>' . get_search_query() . '</span>' ); ?>

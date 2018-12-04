@@ -10,12 +10,17 @@ $grey7: #E9ECEE;
 $grey8: #F1F3F5;
 $grey9: #F8F9FA;
 
+$accent5: #FB4B34;
+$accent4: #FF9283;
+$accent3: #FF6D5A;
+$accent2: #E1230A;
+$accent1: #AF1501;
 
-$accent1: #934B1C;
-$accent2: #BA662C;
-$accent3: #DA8648;
-$accent4: #F0A66C;
-$accent5: #F5BD91;
+$yellow1: #C1AC1B;
+$yellow2: #E5D03D;
+$yellow3: #FFEC64;
+$yellow4: #FFF088;
+$yellow5: #FFF6B3;
 
 
 $color_background-hr: $grey5;
@@ -26,7 +31,7 @@ $color_text-input-focus: #111;
 
 $color_link: #005DAC;
 $color_link-visited:#005DAC;
-$color_link-hover: #FB4934;
+$color_link-hover: $accent3;
 
 $color_border-button: #ccc #ccc #bbb;
 $color_border-button-hover: #ccc #bbb #aaa;
@@ -46,6 +51,7 @@ $font_main_size: 20px;
 $font_line-height-body: 1.5;
 
 $font_headers: "Charter-Bold", Georgia, serif;
+$font_system: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 
 $font_code: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
 $font_code_size: 13px;

@@ -12,10 +12,8 @@
 ?>
 
 </div>
-<footer id="colophon" class="site-footer" role="contentinfo">
-
     <?php get_sidebar(); ?>
-
+<footer id="colophon" class="site-footer" role="contentinfo">
     <div class="site-info header-text-color">
         <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'proximo' ) ); ?>">
 			<?php printf( esc_html__( 'Proudly powered by %s', 'proximo' ), 'WordPress' ); ?>
