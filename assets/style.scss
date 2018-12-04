@@ -92,7 +92,7 @@ article {
 }
 
 .header-text-color a:hover {
-    color: $color_link-hover;
+    color: $accent3;
 }
 
 h1.entry-title,
@@ -105,7 +105,7 @@ h2.entry-title {
     }
 
     a:hover {
-        color: $color_link-hover;
+        color: $accent3;
     }
 }
 
@@ -117,7 +117,7 @@ h3.entry-title {
     }
 
     a:hover {
-        color: $color_link-hover;
+        color: $accent3;
     }
 }
 
@@ -133,7 +133,7 @@ h3.entry-title {
 
 .highlight {
     padding: 6px 8px;
-    background-color: $accent5;
+    background-color: $yellow4;
     border-radius: 4px;
 }
 

@@ -216,7 +216,7 @@ a { color: #005DAC; text-decoration: none; }
 
 a:visited { color: #005DAC; }
 
-a:hover, a:focus, a:active { color: #FF6D5A; }
+a:hover, a:focus, a:active { color: #FB4B34; }
 
 a:focus { outline: thin dotted; }
 
@@ -298,7 +298,7 @@ img.wp-smiley, img.emoji { display: inline !important; border: none !important; 
 
 .main-navigation a { display: inline-block; text-decoration: none; color: #FE8019; }
 
-.main-navigation a:hover { color: #FF6D5A; }
+.main-navigation a:hover { color: #FB4B34; }
 
 @media (max-width: 600px) { .main-navigation { display: none; } }
 
@@ -348,7 +348,7 @@ img.wp-smiley, img.emoji { display: inline !important; border: none !important; 
 
 .widget-area a, .widget-area a:visited { color: #FABD2F; }
 
-.widget-area a:hover { color: #FF6D5A; }
+.widget-area a:hover { color: #FB4B34; }
 
 .search-bar { width: 100%; background-color: #4A5056; }
 
@@ -392,25 +392,25 @@ article { width: 100%; padding: 0; margin-bottom: 32px; padding-bottom: 32px; }
 
 .header-text-color, .header-text-color a, .header-text-color a:visited { color: #FE8019; }
 
-.header-text-color a:hover { color: #FF6D5A; }
+.header-text-color a:hover { color: #FB4B34; }
 
 h1.entry-title, h2.entry-title { font-size: 2.0rem; }
 
 h1.entry-title a, h1.entry-title a:visited, h2.entry-title a, h2.entry-title a:visited { color: #353A3F; }
 
-h1.entry-title a:hover, h2.entry-title a:hover { color: #FF6D5A; }
+h1.entry-title a:hover, h2.entry-title a:hover { color: #FB4B34; }
 
 h3.entry-title { font-size: 1.4rem; }
 
 h3.entry-title a, h3.entry-title a:visited { color: #353A3F; }
 
-h3.entry-title a:hover { color: #FF6D5A; }
+h3.entry-title a:hover { color: #FB4B34; }
 
 .page-title { margin-bottom: 32px; }
 
 .page-title h5 { margin: 0; font-weight: 700; }
 
-.highlight { padding: 6px 8px; background-color: #FB4B34; border-radius: 4px; }
+.highlight { padding: 6px 8px; background-color: #FFF088; border-radius: 4px; }
 
 .search-submit { margin-top: 8px; }
 
