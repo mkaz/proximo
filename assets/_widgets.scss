@@ -2,6 +2,7 @@
     width: 100%;
     background-color: $grey1;
     color: #FFF;
+    margin-top: 64px;
 }
 
 .widget-area {
@@ -50,7 +51,7 @@ input.search-field {
 
     h2.widget-title {
       font-size: 18px;
-      margin-bottom: 0px;
+      margin-bottom: 8px;
     }
 
     ul {
@@ -65,4 +66,20 @@ input.search-field {
       white-space: nowrap;
       overflow: hidden;
     }
+}
+
+#menu-social {
+    margin-top: 16px;
+    max-width: 140px;
+}
+
+.jetpack-social-navigation-genericons a::before {
+    font-size: 32px !important;
+    width: 2em;
+    height: 2em;
+    margin: 0 32px 32px 0;
+}
+
+.jetpack-social-navigation-genericons a[href*="mkaz.com"]::before {
+    content: "\f205";
 }

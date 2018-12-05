@@ -39,8 +39,12 @@ function proximo_setup() {
     // Enqueue editor styles
     add_editor_style( 'style-editor.css' );
 
+    // Gutenberg Images
     add_theme_support( 'align-wide' );
     add_theme_support( 'align-full' );
+
+    // Jetpack Social Menu
+    add_theme_support( 'jetpack-social-menu' );
 
     add_filter( 'excerpt_length', function( $length )  { return 30; } );
 }

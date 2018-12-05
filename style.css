@@ -342,7 +342,7 @@ img.wp-smiley, img.emoji { display: inline !important; border: none !important; 
 
 .post-list .entry-footer { font-size: 1.0rem; }
 
-.widgets { width: 100%; background-color: #353A3F; color: #FFF; }
+.widgets { width: 100%; background-color: #353A3F; color: #FFF; margin-top: 64px; }
 
 .widget-area { max-width: 860px; min-width: 200px; width: 100%; margin: 0 auto; padding: 0 4%; display: flex; flex-wrap: wrap; justify-content: space-between; }
 
@@ -360,11 +360,17 @@ input.search-field { max-width: 320px; width: 100%; }
 
 .widget select { max-width: 100%; }
 
-.widget h2.widget-title { font-size: 18px; margin-bottom: 0px; }
+.widget h2.widget-title { font-size: 18px; margin-bottom: 8px; }
 
 .widget ul { margin: 0; padding: 0; list-style: square; list-style-position: inside; }
 
 .widget li { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+
+#menu-social { margin-top: 16px; max-width: 140px; }
+
+.jetpack-social-navigation-genericons a::before { font-size: 32px !important; width: 2em; height: 2em; margin: 0 32px 32px 0; }
+
+.jetpack-social-navigation-genericons a[href*="mkaz.com"]::before { content: "\f205"; }
 
 .wrapper { display: flex; justify-content: center; margin-top: 32px; }
 
