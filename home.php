@@ -13,6 +13,8 @@ $previous_year = 1970;
 
 <main id="main" class="content-area" role="main">
 
+    <?php dynamic_sidebar( 'author-1' ); ?>
+
     <section class="post-index" aria-label="List of Posts by Year">
     <?php while ( have_posts() ) : the_post(); ?>
         <?php

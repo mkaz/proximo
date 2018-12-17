@@ -42,7 +42,7 @@ h6 { font-size: 1.00rem; }
 	font-family: $font_code;
 	font-size: $font_code_size;
 	color: $font_code_color;
-	background-color: $color_background-content;
+	background-color: none;
 }
 
 @import "block-quote";

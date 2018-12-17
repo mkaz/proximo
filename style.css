@@ -318,7 +318,7 @@ img.wp-smiley, img.emoji { display: inline !important; border: none !important; 
 
 .wp-block-quote cite, .wp-block-quote footer, .wp-block-quote__citation { font-family: Helvetica, sans-serif; font-weight: 300; font-size: 0.90rem; font-style: normal; color: #666666; }
 
-.post-index { max-width: 720px; width: 100%; list-style: none; margin: 0 0 32px 0; padding: 0; }
+.post-index { max-width: 720px; width: 100%; list-style: none; margin: 0 auto 32px auto; padding: 0; }
 
 .post-index ul { list-style: none; padding: 0; margin: 0; }
 
@@ -432,3 +432,6 @@ h3.entry-title a:hover { color: #FB4B34; }
 .wp-block-image.alignwide { max-width: none; margin-left: -8%; margin-right: -8%; }
 
 .wp-block-cover, .wp-block-cover-image { width: inherit; margin-left: -8%; margin-right: -8%; }
+
+/* front page about */
+.author-block { background-color: #FFF088; padding: 32px; border-radius: 8px; }
