@@ -68,9 +68,13 @@ input.search-field {
     }
 }
 
-#menu-social {
+section.jetpack-social-menu {
     margin-top: 16px;
     max-width: 140px;
+
+    h2.widget-title {
+        margin-bottom: 16px;
+    }
 }
 
 .jetpack-social-navigation-genericons a::before {

@@ -366,7 +366,9 @@ input.search-field { max-width: 320px; width: 100%; }
 
 .widget li { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
 
-#menu-social { margin-top: 16px; max-width: 140px; }
+section.jetpack-social-menu { margin-top: 16px; max-width: 140px; }
+
+section.jetpack-social-menu h2.widget-title { margin-bottom: 16px; }
 
 .jetpack-social-navigation-genericons a::before { font-size: 32px !important; width: 2em; height: 2em; margin: 0 32px 32px 0; }
 
