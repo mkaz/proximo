@@ -22,6 +22,7 @@ $yellow3: #FFEC64;
 $yellow4: #FFF088;
 $yellow5: #FFF6B3;
 
+$magenta: #F30899;
 
 $color_background-hr: $grey5;
 $color_background-button: $grey7;
@@ -53,8 +54,8 @@ $font_headers: "Charter-Bold", Georgia, serif;
 $font_system: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 
 $font_code: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
-$font_code_size: 13px;
-$font_code_color: #282838;
+$font_code_size: 16px;
+$font_code_color: $magenta;
 $font_code_line-height: 1.6;
 
 $border-struct-style: 1px solid #ccc;
