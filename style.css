@@ -318,25 +318,29 @@ img.wp-smiley, img.emoji { display: inline !important; border: none !important; 
 
 .wp-block-quote cite, .wp-block-quote footer, .wp-block-quote__citation { font-family: Helvetica, sans-serif; font-weight: 300; font-size: 0.90rem; font-style: normal; color: #666666; }
 
-.home-sections { display: flex; flex-wrap: wrap; }
+.full-page { display: flex; flex-wrap: wrap; justify-content: space-around; }
 
-.home-sections section { max-width: 360px; margin: 36px; }
+.full-page section { max-width: 360px; margin: 36px; }
 
-.home-sections section header { padding: 32px; color: white; }
+.full-page section.author-block { max-width: 640px; width: 100%; }
 
-.home-sections section header h2 { margin: 0; }
+.full-page section header { border-radius: 8px; padding: 32px; color: white; }
 
-.home-sections section header.cli { background-color: #282828; background-image: url("assets/circuit-board.svg"); }
+.full-page section header h2 { margin: 0; }
 
-.home-sections section header.wp { background-color: #0073AA; background-image: url("assets/random-shapes.svg"); }
+.full-page section header.cli { background-color: #282828; background-image: url("assets/circuit-board.svg"); }
 
-.home-sections section header.dataviz { background-color: #F012BE; background-image: url("assets/graph-paper.svg"); }
+.full-page section header.wp { background-color: #0073AA; background-image: url("assets/random-shapes.svg"); }
 
-.home-sections section header.python { background-color: #3ba99c; }
+.full-page section header.dataviz { background-color: #F012BE; background-image: url("assets/graph-paper.svg"); }
 
-.home-sections .content { margin: 16px 8px; }
+.full-page section header.python { background-color: #3ba99c; }
 
-.home-sections .content ul { margin-top: 16px; }
+.full-page .content { margin: 16px 8px; }
+
+.full-page .content p { margin-bottom: 1.0rem; }
+
+.full-page .content ul { white-space: nowrap; overflow: ellipsis; }
 
 .post-list { max-width: 720px; width: 100%; }
 

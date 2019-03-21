@@ -1,16 +1,23 @@
 // homepage
 
-.home-sections {
+.full-page {
 
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 
     section {
 
         max-width: 360px;
         margin: 36px;
 
+        &.author-block {
+            max-width: 640px;
+            width: 100%;
+        }
+
         header {
+            border-radius: 8px;
             padding: 32px;
             color:white;
 
@@ -42,10 +49,14 @@
     }
 
     .content {
+
         margin:16px 8px;
 
+        p { margin-bottom: 1.0rem; }
+
         ul {
-            margin-top: 16px;
+            white-space: nowrap;
+            overflow: ellipsis;
         }
     }
 }
