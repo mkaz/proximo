@@ -276,11 +276,11 @@ img.wp-smiley, img.emoji { display: inline !important; border: none !important; 
 
 .logo { width: 24px; height: 24px; }
 
-.site-title { display: inline-block; font-family: "Charter-Bold", Georgia, serif; font-weight: 700; font-size: 36px; margin: 0; color: #FE8019; }
+.site-title { display: inline-block; font-family: "Charter-Bold", Georgia, serif; font-weight: 700; font-size: 48px; margin: 0; color: #FE8019; }
 
 .site-description { margin: 4px 0 0 0; font-size: 16px; font-style: italic; font-weight: 300; text-transform: lowercase; color: #AAA; }
 
-.main-navigation { display: block; min-width: 240px; text-align: right; }
+.main-navigation { display: block; min-width: 280px; text-align: right; }
 
 .main-navigation ul { display: block; list-style: none; margin: 0; padding-left: 0; }
 
