@@ -318,19 +318,25 @@ img.wp-smiley, img.emoji { display: inline !important; border: none !important; 
 
 .wp-block-quote cite, .wp-block-quote footer, .wp-block-quote__citation { font-family: Helvetica, sans-serif; font-weight: 300; font-size: 0.90rem; font-style: normal; color: #666666; }
 
-.post-index { max-width: 720px; width: 100%; list-style: none; margin: 0 auto 32px auto; padding: 0; }
+.home-sections { display: flex; flex-wrap: wrap; }
 
-.post-index ul { list-style: none; padding: 0; margin: 0; }
+.home-sections section { max-width: 360px; margin: 36px; }
 
-.post-index li { margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #DFE2E5; display: flex; }
+.home-sections section header { padding: 32px; color: white; }
 
-.post-index li:last-child { border-bottom: none; }
+.home-sections section header h2 { margin: 0; }
 
-.post-index .entry-title { font-size: 1.2rem; display: inline-block; min-width: 360px; width: 100%; text-overflow: ellipsis; }
+.home-sections section header.cli { background-color: #282828; background-image: url("assets/circuit-board.svg"); }
 
-.post-index .published { display: inline-block; max-width: 160px; width: 100%; font-size: 1.0rem; color: #878E95; text-align: left; }
+.home-sections section header.wp { background-color: #0073AA; background-image: url("assets/random-shapes.svg"); }
 
-@media (max-width: 600px) { .post-index .published { display: none; } }
+.home-sections section header.dataviz { background-color: #F012BE; background-image: url("assets/graph-paper.svg"); }
+
+.home-sections section header.python { background-color: #3ba99c; }
+
+.home-sections .content { margin: 16px 8px; }
+
+.home-sections .content ul { margin-top: 16px; }
 
 .post-list { max-width: 720px; width: 100%; }
 

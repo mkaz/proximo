@@ -1,51 +1,60 @@
 <?php
 /**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * Home page with posts by year
  *
  * @package Proximo
  */
 
-get_header(); ?>
+get_header();
+
+$previous_year = 1970;
+
+?>
 
 <main id="main" class="content-area" role="main">
-	<?php
-	if ( have_posts() ) : ?>
+    <header class="page-title">
+        <h5>
+            <?php if ( is_search() ) : ?>
+                <div class="highlight">
+                    <?php printf( esc_html( 'Search Results: %s' ), '<span>' . get_search_query() . '</span>' ); ?>
+                </div>
+            <?php elseif ( is_archive() ) : ?>
+                <?php the_archive_title(); ?>
+            <?php else: ?>
+                Articles
+            <?php endif; ?>
+        </h5>
+    </header>
 
-		<header class="page-title">
-            <h5>
-                <?php if ( is_search() ) : ?>
-                    <div class="highlight">
-                        <?php printf( esc_html( 'Search Results: %s' ), '<span>' . get_search_query() . '</span>' ); ?>
-                    </div>
-                <?php elseif ( is_archive() ) : ?>
-                    <?php the_archive_title(); ?>
-                <?php else: ?>
-                    Articles
-                <?php endif; ?>
-            </h5>
-		</header>
+    <section class="post-index" aria-label="List of Posts by Year">
+    <?php while ( have_posts() ) : the_post(); ?>
+        <?php
+        $current_year = get_the_date( 'Y' );
+        if ( $current_year != $previous_year ) {
+            // do we need to close previous year tag
+            if ( $previous_year != '1970' ) {
+                echo '</ul>';
+            }
+            echo '<h4 class="year">' . $current_year . '</h4>';
+            echo '<ul>';
+        }
+        ?>
+        <li class="hentry">
+            <span class="entry-title">
+                <?php the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' ); ?>
+            </span>
+            <time class="entry-date published" datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>">
+                <?php echo esc_html( get_the_date( 'F j' ) ); ?>
+            </time>
+        </li>
 
-		<section class="post-list" aria-label="List of Posts">
-			<?php
-			while ( have_posts() ) : the_post();
-				get_template_part( 'inc/content', 'excerpt' );
-			endwhile; ?>
-        </section>
-		<?php
-		proximo_pagination();
+        <?php $previous_year = $current_year; ?>
+    <?php endwhile; ?>
+    <?php echo '</ul>'; // final year close ?>
+    </section>
 
-	else :
+    <?php proximo_pagination(); ?>
 
-		get_template_part( 'inc/content', 'none' );
-
-	endif; ?>
 </main>
 
 <?php get_footer(); ?>
