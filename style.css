@@ -272,7 +272,7 @@ img.wp-smiley, img.emoji { display: inline !important; border: none !important; 
 
 .site-header { width: 100%; margin: 0; padding: 16px 4%; background-color: #212529; display: flex; justify-content: center; }
 
-.site-branding { min-width: 360px; max-width: 620px; width: 100%; }
+.site-branding { min-width: 360px; max-width: 480px; width: 100%; }
 
 .logo { width: 24px; height: 24px; }
 
