@@ -276,7 +276,7 @@ img.wp-smiley, img.emoji { display: inline !important; border: none !important; 
 
 .logo { width: 24px; height: 24px; }
 
-.site-title { display: inline-block; font-family: "Charter-Bold", Georgia, serif; font-weight: 700; font-size: 48px; margin: 0; color: #FE8019; }
+.site-title { display: inline-block; font-family: "Charter-Bold", Georgia, serif; font-weight: 700; font-size: 36px; margin: 0; color: #FE8019; }
 
 .site-description { margin: 4px 0 0 0; font-size: 16px; font-style: italic; font-weight: 300; text-transform: lowercase; color: #AAA; }
 
@@ -447,3 +447,15 @@ h3.entry-title a:hover { color: #FB4B34; }
 
 /* front page about */
 .author-block { background-color: #FFF088; padding: 32px; border-radius: 8px; }
+
+/* printed */
+@media print { header#masthead { display: none; }
+  section.search-bar { display: none; }
+  video { display: none; }
+  nav.widgets { display: none; }
+  div#comments { display: none; }
+  .wrapper { display: block !important; }
+  body { font-size: 16px; }
+  main { max-width: inherit; }
+  .single article { min-height: inherit; }
+  .header-text-color { color: #666; } }

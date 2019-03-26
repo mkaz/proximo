@@ -15,11 +15,13 @@
     <?php get_sidebar(); ?>
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="site-info header-text-color">
+        &copy; <?php echo date('Y'); ?> mkaz.blog
+        <span class="sep"> | </span>
         <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'proximo' ) ); ?>">
 			<?php printf( esc_html__( 'Proudly powered by %s', 'proximo' ), 'WordPress' ); ?>
 		</a>
         <span class="sep"> | </span>
-        Theme: <a href="https://github.com/mkaz/proximo">Proximo</a>
+        <a href="https://github.com/mkaz/proximo">Proximo Theme</a>
 		crafted by <a href="https://mkaz.com/" rel="designer">mkaz</a>
     </div>
 </footer>
