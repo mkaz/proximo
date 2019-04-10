@@ -62,7 +62,7 @@
 }
 
 // all other list like pages
-.post-list {
+.post-index {
 
     max-width: 720px;
     width: 100%;
@@ -77,12 +77,21 @@
         border-bottom: none;
     }
 
-    p {
-        margin: 0.5rem 0;
-        font-size: 1.0rem;
+    li.hentry {
+        margin-bottom: 0.5rem;
+        vertical-align: top;
     }
 
-    .entry-footer {
-        font-size: 1.0rem;
+    .entry-title {
+        display: inline-block;
+        width: 320px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        vertical-align: top;
+    }
+
+    time {
+        vertical-align: baseline;
     }
 }

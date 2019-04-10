@@ -147,15 +147,17 @@ input.search-field { max-width: 320px; width: 100%; }
 
 .full-page .content ul { white-space: nowrap; overflow: ellipsis; }
 
-.post-list { max-width: 720px; width: 100%; }
+.post-index { max-width: 720px; width: 100%; }
 
-.post-list article { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #DFE2E5; }
+.post-index article { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #DFE2E5; }
 
-.post-list article:last-child { border-bottom: none; }
+.post-index article:last-child { border-bottom: none; }
 
-.post-list p { margin: 0.5rem 0; font-size: 1.0rem; }
+.post-index li.hentry { margin-bottom: 0.5rem; vertical-align: top; }
 
-.post-list .entry-footer { font-size: 1.0rem; }
+.post-index .entry-title { display: inline-block; width: 320px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; vertical-align: top; }
+
+.post-index time { vertical-align: baseline; }
 
 .widgets { width: 100%; background-color: #353A3F; color: #FFF; margin-top: 64px; }
 
