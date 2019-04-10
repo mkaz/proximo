@@ -1,8 +1,6 @@
 html {
-box-sizing: border-box;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust:     100%;
+    box-sizing: border-box;
+    font-size: 18px;  /* Charter is smaller than normal */
 }
 
 *,
@@ -12,371 +10,106 @@ box-sizing: border-box;
 }
 
 body {
+    padding: 0;
     margin: 0;
-    background: $grey9;
+	background-color: #FAFAFA;
+	color: #111111;
+	font-family: 'Charter', Georgia, serif;
 }
 
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-    display: block;
+a, a:visited, label.margin-toggle {
+	color: #005DAC;
+	text-decoration: underline dotted;
 }
 
-audio,
-canvas,
-progress,
-video {
-    display: inline-block;
-    vertical-align: baseline;
+a:hover, label.margin-toggle:hover {
+	color: #FB4B34;
 }
 
-audio:not([controls]) {
-    display: none;
-    height: 0;
+// this wraps each page main
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    padding: 0 4%;
 }
 
-[hidden],
-template {
-    display: none;
+main {
+    max-width: 46rem;
+    width: 100%;
+	margin: 0 auto;
 }
 
-a {
-    background-color: transparent;
+article {
+	//max-width: 38rem;
 }
 
-a:active,
-a:hover {
-    outline: 0;
+h1, h2, h3, b, strong {
+    font-family: 'Charter-Bold', Georgia, serif;
 }
 
-abbr[title] {
-    border-bottom: 1px dotted;
+em, i, cite {
+	font-family: 'Charter-Italic', Georgia, serif;
 }
 
-b,
-strong {
-    font-weight: bold;
-}
-
-dfn {
-    font-style: italic;
-}
-
-mark {
-    background: #ff0;
-    color: #000;
-}
-
-small {
-    font-size: 80%;
-}
-
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-sup {
-    top: -0.5em;
-}
-
-sub {
-    bottom: -0.25em;
-}
-
-img {
-    border: 0;
-}
-
-svg:not(:root) {
-    overflow: hidden;
-}
-
-figure {
-    margin: 1em 40px;
-}
-
-hr {
-    box-sizing: content-box;
-    height: 0;
+pre, code {
+	font-size: 16px;
+	font-family: Hack, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	color: #F30899;
 }
 
 pre {
-    overflow: auto;
+	background-color: #FFFFFF;
+	border: 1px solid #CCC;
+	padding: 1.0rem;
 }
 
-code,
-kbd,
-pre,
-samp {
-    font-family: monospace, monospace;
-    font-size: 1em;
+h1 { font-size: 2.0rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.2rem; }
+.subtitle {
+	margin-top: -1.5rem;
+	font-family: 'Charter-Italic', Georgia, serif;
+	font-size: 1.2rem;
 }
 
-button,
-input,
-optgroup,
-select,
-textarea {
-    color: inherit;
-    font: inherit;
-    margin: 0;
+/* scale with width */
+figure, img, video {
+	display: block;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
 }
 
-button {
-    overflow: visible;
+figure.fullwidth {
+	max-width: 100%;
 }
 
-button,
-select {
-    text-transform: none;
+figcaption {
+	color: #666;
+	font-size: 0.85rem;
 }
 
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-    -webkit-appearance: button;
-    cursor: pointer;
+/* little extra space */
+p {
+	margin: 1.5rem 0;
+	max-width: 32rem;
 }
 
-button[disabled],
-html input[disabled] {
-    cursor: default;
+blockquote {
+	max-width: 70%;
+	margin: 2.0rem 0;
+	padding-left: 1.0rem;
+	border-left: 0.5rem solid #CCCCCC;
+	font-family: 'Charter-Italic', Georgia, serif;
 }
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+blockquote footer {
+	font-family: 'Charter';
 }
 
-input {
-    line-height: normal;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-    box-sizing: border-box;
-    padding: 0;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    height: auto;
-}
-
-input[type="search"] {
-    -webkit-appearance: textfield;
-    box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-}
-
-fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
-}
-
-legend {
-    border: 0;
-    padding: 0;
-}
-
-textarea {
-    overflow: auto;
-}
-
-optgroup {
-    font-weight: bold;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-td,
-th {
-    padding: 0;
-}
-
-ul, ol {
-    margin: 0 3em 1.5em 0em;
-}
-
-ul {
-    list-style: square;
-}
-
-ol {
-    list-style: decimal;
-}
-
-li > ul,
-li > ol {
-    margin-bottom: 0;
-    margin-left: 0.5em;
-}
-
-dt {
-    font-weight: bold;
-}
-
-dd {
-    margin: 0 1.5em 1.5em;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-textarea {
-    color: $color_text-input;
-    border: 1px solid $color_border-input;
-    border-radius: 3px;
-
-    &:focus {
-        color: $color_text-input-focus;
-    }
-}
-
-select {
-    border: 1px solid $color_border-input;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"] {
-    font-size: 1.0rem;
-    font-family: $font_system;
-    padding: 3px 8px;
-}
-
-textarea {
-    padding-left: 3px;
-    width: 100%;
-}
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	background-color: $yellow3;
-	border-radius:4px;
-    border: none;
-	display:inline-block;
-	color: $grey2;
-	font-family: $font_system;
-	font-size: 0.9rem;
-	padding:6px 15px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffee66;
-
-    &:hover {
-        color: $grey1;
-        background-color: $yellow4
-    }
-
-    &:active {
-    	position:relative;
-    	top:1px;
-    }
-}
-
-/* Do not show the outline on the skip link target. */
-#content[tabindex="-1"]:focus {
-    outline: 0;
-}
-
-hr {
-    background-color: $color_background-hr;
-    border: 0;
-    height: 1px;
-    margin-bottom: 1.5em;
-}
-
-.alignleft {
-    display: inline;
-    float: left;
-    margin-right: 1.5em;
-}
-
-.alignright {
-    display: inline;
-    float: right;
-    margin-left: 1.5em;
-}
-
-.aligncenter {
-    clear: both;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-footer:before,
-.site-footer:after {
-    content: "";
-    display: table;
-    table-layout: fixed;
-}
-
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-footer:after {
-    clear: both;
-}
 table {
     margin: 0 0 1.5em;
     width: 100%;
@@ -387,9 +120,11 @@ table.code {
 
     th, td {
         font-family: $font_code;
-        font-size: $font_code_size;
+        font-size: 0.85rem;
         padding: 4px 32px 4px 0;
         line-height: 1.1rem;
+        border-bottom: 1px solid #CCCCCC;
+        text-align: left;
     }
 
     th:last-child, td:last-child {
@@ -409,309 +144,3 @@ table.center td {
     margin-bottom: 1.1em;
 }
 
-.content-area table tbody > tr:nth-child(odd) > td { background: #f9f9f9; }
-
-.content-area th,
-.content-area td {
-    padding: 2%;
-    margin: 0;
-    overflow: visible;
-    line-height: 120%;
-    border-bottom: 1px solid #DDD;
-}
-
-.content-area th { padding-top: 0; }
-
-.content-area caption {
-    color: #111;
-    text-align: center;
-    padding: 2%;
-}
-
-.content-area thead {
-    vertical-align: bottom;
-    white-space: nowrap;
-}
-
-.content-area th {
-    font-weight: bold;
-    color: #111;
-}
-
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-
-    .content-area & {
-        margin: 0 0 1.5em;
-        overflow: hidden;
-    }
-
-    .nav-previous {
-        float: left;
-        width: 50%;
-    }
-
-    .nav-next {
-        float: right;
-        text-align: right;
-        width: 50%;
-    }
-}
-
-/* Text meant only for screen readers. */
-.screen-reader-text {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute !important;
-  width: 1px;
-  word-wrap: normal !important;
-}
-
-.screen-reader-text:focus {
-  background-color: #eee;
-  clip: auto !important;
-  clip-path: none;
-  color: #444;
-  display: block;
-  font-size: 1em;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000;
-}
-
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
-.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
-    display: none;
-}
-
-.infinity-end.neverending .site-footer {
-    display: block;
-}
-
-body,
-button,
-input,
-select,
-textarea {
-    color: $grey1;
-    font-family: $font_main;
-    font-size: $font_main_size;
-    line-height: $font_line-height-body;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    clear: both;
-    font-family: $font_headers;
-    font-weight: 400;
-    line-height: 1.1;
-    margin-bottom: 0.5rem;
-}
-
-h1 { font-size: 2.0rem; }
-h2 { font-size: 1.8rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.25rem; }
-h5 { font-size: 1.15rem; }
-h6 { font-size: 1.00rem; }
-
-p {
-    margin-bottom: 1.5em;
-}
-
-dfn, cite, em, i {
-    font-style: italic;
-}
-
-address {
-    margin: 0 0 1.5em;
-}
-
-pre {
-    border: 1px solid #E2E4E7;
-    border-radius: 4px;
-    background-color: none;
-    color: $font_code_color;
-    font-family: $font_code;
-    font-size: $font_code_size;
-    line-height: $font_code_line-height;
-    margin-bottom: 1.6em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 0.8em 1.6em;
-}
-
-code, kbd, tt, var {
-    color: $font_code_color;
-    font-family: $font_code;
-    font-size: $font_code_size;
-}
-
-abbr, acronym {
-    border-bottom: 1px dotted $color_border-abbr;
-    cursor: help;
-}
-
-mark, ins {
-    text-decoration: none;
-}
-
-big {
-    font-size: 125%;
-}
-
-blockquote, q {
-    margin: 0 1.5em;
-    quotes: "" "";
-
-    &:before,
-    &:after {
-        content: "";
-    }
-}
-
-a {
-    color: $color_link;
-    text-decoration: none;
-
-    &:visited {
-        color: $color_link-visited;
-    }
-    &:hover,
-    &:focus,
-    &:active {
-        color: $accent3;
-    }
-    &:focus {
-        outline: thin dotted;
-    }
-    &:hover,
-    &:active {
-        outline: 0;
-    }
-}
-
-.entry-content a {
-    text-decoration: underline dotted #999;
-}
-
-.entry-content a:visited {
-    text-decoration: none;
-}
-
-img {
-    height: auto;
-    max-width: 100%;
-}
-
-embed,
-iframe,
-object {
-    max-width: 100%;
-}
-
-.wp-caption {
-    margin: 1em 0 1.5em;
-    max-width: 100%;
-
-    img[class*="wp-image-"] {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .wp-caption-text {
-        margin: 0.8075em 0;
-    }
-}
-
-.wp-caption.aligncenter {
-        margin-left: auto;
-        margin-right: auto;
-}
-
-.wp-caption.alignleft {
-        margin-right: 20px;
-}
-
-.wp-caption.alignright {
-        margin-left: 20px;
-}
-
-.wp-caption-text {
-    text-align: center;
-}
-
-.gallery {
-    margin-bottom: 1.5em;
-}
-
-.gallery-item {
-    display: inline-block;
-    text-align: center;
-    vertical-align: top;
-    width: 100%;
-
-    .gallery-columns-2 & {
-        max-width: 50%;
-    }
-
-    .gallery-columns-3 & {
-        max-width: 33.33%;
-    }
-
-    .gallery-columns-4 & {
-        max-width: 25%;
-    }
-
-    .gallery-columns-5 & {
-        max-width: 20%;
-    }
-
-    .gallery-columns-6 & {
-        max-width: 16.66%;
-    }
-
-    .gallery-columns-7 & {
-        max-width: 14.28%;
-    }
-
-    .gallery-columns-8 & {
-        max-width: 12.5%;
-    }
-
-    .gallery-columns-9 & {
-        max-width: 11.11%;
-    }
-}
-
-.gallery-caption {
-    display: block;
-}
-
-.img-size-med {
-    max-width: 480px;
-}
-
-img.wp-smiley, img.emoji {
-    display: inline !important;
-    border: none !important;
-    box-shadow: none !important;
-    height: 1em !important;
-    width: 1em !important;
-    margin: 0 .07em !important;
-    vertical-align: -0.1em !important;
-    background: none !important;
-    padding: 0 !important;
-}

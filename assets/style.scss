@@ -18,29 +18,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "base";
 @import "masthead";
 @import "pagination";
-@import "block-quote";
 @import "post-list";
 @import "widgets";
 
-// this wraps each page main
-.wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 32px;
-}
-
-main {
-    max-width: 860px;
-    padding: 0 4%;
-    width: 100%;
-}
-
-article {
-    width: 100%;
-    padding: 0;
-    margin-bottom: 32px;
-    padding-bottom: 32px;
-}
 
 .single article {
     min-height: 50vh;
@@ -65,6 +45,7 @@ article {
 }
 
 .entry-meta {
+    margin-top: -1.5rem;
     font-size: 0.9rem;
 }
 
@@ -93,32 +74,6 @@ article {
 
 .header-text-color a:hover {
     color: $accent3;
-}
-
-h1.entry-title,
-h2.entry-title {
-
-    font-size: 2.0rem;
-
-    a, a:visited {
-        color: $grey1;
-    }
-
-    a:hover {
-        color: $accent3;
-    }
-}
-
-h3.entry-title {
-    font-size: 1.4rem;
-
-    a, a:visited {
-        color: $grey1;
-    }
-
-    a:hover {
-        color: $accent3;
-    }
 }
 
 .page-title {
@@ -166,6 +121,12 @@ h3.entry-title {
     margin-left: -8%;
     margin-right: -8%;
 }
+
+.alignleft,
+.alignright {
+    max-width: 20rem;
+}
+
 
 .wp-block-cover,
 .wp-block-cover-image {

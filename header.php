@@ -24,21 +24,22 @@
 <body <?php body_class(); ?>>
 
     <header id="masthead" class="site-header" role="banner">
-        <div class="site-branding">
-            <h3 class="site-title header-text-color">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                    <?php bloginfo( 'name' ); ?>
-                </a>
-            </h3>
-            <?php if ( ! empty( get_bloginfo( 'description' ) ) ) : ?>
-                <h4 class="site-description"><?php bloginfo( 'description'); ?></h4>
-            <?php endif; ?>
-        </div>
+        <section class="header-bar">
+            <div class="site-branding">
+                <h3 class="site-title header-text-color">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                        <?php bloginfo( 'name' ); ?>
+                    </a>
+                </h3>
+                <?php if ( ! empty( get_bloginfo( 'description' ) ) ) : ?>
+                    <h4 class="site-description"><?php bloginfo( 'description'); ?></h4>
+                <?php endif; ?>
+            </div>
 
-        <nav id="site-navigation" class="main-navigation header-text-color" role="navigation">
-            <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'top-menu' ) ); ?>
-        </nav>
-
+            <nav id="site-navigation" class="main-navigation header-text-color" role="navigation">
+                <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'top-menu' ) ); ?>
+            </nav>
+        </section>
     </header>
     <section class="search-bar" role="search">
         <?php get_search_form(); ?>

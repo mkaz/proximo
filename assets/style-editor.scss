@@ -3,15 +3,15 @@
 @import "variables";
 
 body {
-	color: #404040;
-	font-family: $font_main;
-	font-size: 20px;
+	color: #111111;
+	font-family: 'Charter', Georgia, serif;
+	font-size: 18px;
 	line-height: 1.5;
 }
 
 p {
-	font-size: 20px;
-	line-height: 1.5;
+	font-size: 18px;
+    max-width: 32rem;
 }
 
 h1,
@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $font_main;
+	font-family: 'Charter-Bold', Georgia, serif;
 }
 
 h1 { font-size: 2.0rem; }
@@ -32,7 +32,7 @@ h6 { font-size: 1.00rem; }
 
 
 .editor-post-title__block .editor-post-title__input {
-	font-family: $font_main;
+	font-family: 'Charter-Bold', Georgia, serif;
 	font-size: 2.0rem;
 }
 
@@ -45,4 +45,7 @@ h6 { font-size: 1.00rem; }
 	background-color: none;
 }
 
-@import "block-quote";
+.alignleft,
+.alignright {
+    max-width: 20rem;
+}
