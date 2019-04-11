@@ -50,9 +50,6 @@ figure.fullwidth { max-width: 100%; }
 
 figcaption { color: #666; font-size: 0.85rem; }
 
-/* little extra space */
-p { margin: 1.0rem 0 1.5rem 0; max-width: 32rem; }
-
 blockquote { max-width: 70%; margin: 2.0rem 0; padding-left: 1.0rem; border-left: 0.5rem solid #CCCCCC; font-family: 'Charter-Italic', Georgia, serif; }
 
 blockquote footer { font-family: 'Charter'; }
@@ -199,6 +196,12 @@ section.jetpack-social-menu h2.widget-title { margin-bottom: 16px; }
 
 .entry-meta { margin: -0.5rem 0 2.0rem 0; font-size: 0.9rem; }
 
+.entry-content ol, .entry-content ul { max-width: 32rem; padding: 0 0 0 1.0rem; }
+
+.entry-content ul li, .entry-content ol li { margin-bottom: 1.5rem; }
+
+.entry-content p { margin: 1.0rem 0 1.5rem 0; max-width: 32rem; }
+
 .page-links { clear: both; margin: 0 0 1.5em; }
 
 .site-footer { background-color: #212529; padding-bottom: 0; }
@@ -218,6 +221,8 @@ section.jetpack-social-menu h2.widget-title { margin-bottom: 16px; }
 .search-submit { margin-top: 8px; }
 
 .sharedaddy { margin: 32px 0 16px 0; }
+
+ol.comment-list { max-width: 32rem; }
 
 .comment-content a { word-wrap: break-word; }
 

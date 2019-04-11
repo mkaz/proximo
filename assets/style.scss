@@ -49,6 +49,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-size: 0.9rem;
 }
 
+.entry-content {
+    ol, ul {
+        max-width: 32rem;
+        padding: 0 0 0 1.0rem;
+    }
+
+    ul li,
+    ol li {
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        margin: 1.0rem 0 1.5rem 0;
+        max-width: 32rem;
+    }
+}
 
 .page-links {
     clear: both;
@@ -100,13 +116,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
     margin: 32px 0 16px 0;
 }
 
+ol.comment-list {
+    max-width: 32rem;
+}
+
 .comment-content a {
     word-wrap: break-word;
 }
 .bypostauthor {
     display: block;
 }
-
 
 
 /* Gutenberg styles */
