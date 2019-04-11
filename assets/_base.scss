@@ -145,3 +145,9 @@ table.center td {
     margin-bottom: 1.1em;
 }
 
+@media screen and (max-width: 420px ) {
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+}
