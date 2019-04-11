@@ -1,8 +1,18 @@
-This file is recommended.
 
 ## Theme Preview
 
 <img src="screenshot.png" title="Theme Screenshot" width="600"/>
+
+See it in action at: https://mkaz.blog/
+
+## Usage
+
+Blog carefully my friends.
+
+You may also be interested in cousin plugins that enhance the experience:
+
+* Tufte-like Sidenotes: https://github.com/mkaz/proximo-sidenote
+* Barely Fancy Tips: https://github.com/mkaz/proximo-tips
 
 
 ##  Build
@@ -12,18 +22,11 @@ The stylesheets are Sassy. Check out Makefile, they can be built using something
 	node-sass --output-style compact -o ./ ./assets/style.scss
 
 
-## Usage
-
-Blog carefully my friends.
-
-
-
 ## Contribute
 
 Yes, please. Issues, code, whatever you've got.
 
 https://github.com/mkaz/proximo
-
 
 
 ## Credits
