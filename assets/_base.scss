@@ -19,11 +19,12 @@ body {
 
 a, a:visited, label.margin-toggle {
 	color: #005DAC;
-	text-decoration: underline dotted;
+    text-decoration: none;
 }
 
 a:hover, label.margin-toggle:hover {
 	color: #FB4B34;
+	text-decoration: underline;
 }
 
 // this wraps each page main
@@ -64,9 +65,9 @@ pre {
 	padding: 1.0rem;
 }
 
-h1 { font-size: 2.0rem; }
-h2 { font-size: 1.6rem; }
-h3 { font-size: 1.2rem; }
+h1 { font-size: 2.0rem; margin: 1.5rem 0 0.5rem 0; }
+h2 { font-size: 1.6rem; margin: 1.5rem 0 0.5rem 0; }
+h3 { font-size: 1.2rem; margin: 1.5rem 0 0.5rem 0; }
 .subtitle {
 	margin-top: -1.5rem;
 	font-family: 'Charter-Italic', Georgia, serif;
@@ -94,7 +95,7 @@ figcaption {
 
 /* little extra space */
 p {
-	margin: 1.5rem 0;
+	margin: 1.0rem 0 1.5rem 0;
 	max-width: 32rem;
 }
 
