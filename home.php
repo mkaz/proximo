@@ -13,7 +13,7 @@ $previous_year = 1970;
 
 <main id="main" class="content-area" role="main">
     <header class="page-title">
-        <h5>
+        <h3>
             <?php if ( is_search() ) : ?>
                 <div class="highlight">
                     <?php printf( esc_html( 'Search Results: %s' ), '<span>' . get_search_query() . '</span>' ); ?>
@@ -23,7 +23,7 @@ $previous_year = 1970;
             <?php else: ?>
                 Articles
             <?php endif; ?>
-        </h5>
+        </h3>
     </header>
 
     <section class="post-index" aria-label="List of Posts by Year">
