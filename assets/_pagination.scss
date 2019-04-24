@@ -23,7 +23,7 @@
 .navigation li a:hover,
 .navigation li.active a,
 .navigation li.disabled {
-    background-color: $grey2;
+    background-color:#4A5056;
     cursor: pointer;
     padding: 12px;
     padding: 0.75rem;
@@ -31,5 +31,5 @@
 
 .navigation li a:hover,
 .navigation li.active a {
-    background-color: $accent2;
+    background-color: #E1230A;
 }

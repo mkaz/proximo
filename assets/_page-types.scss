@@ -1,0 +1,160 @@
+// page type specifc css
+
+// homepage and list views
+.post-index {
+
+    max-width: 720px;
+    width: 100%;
+
+    article {
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid $grey6;
+    }
+
+    article:last-child {
+        border-bottom: none;
+    }
+
+    li.hentry {
+        margin-bottom: 0.5rem;
+        vertical-align: top;
+    }
+
+    .entry-title {
+        display: inline-block;
+        width: 320px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        vertical-align: top;
+    }
+
+    time {
+        display: inline-block;
+        margin-left: 1.0rem;
+        vertical-align: baseline;
+    }
+}
+
+// tutorial pages
+.page-template-page-tut {
+    header {
+        width: 100%;
+        padding: 2rem 0 1rem 1rem;
+        border-bottom: 1px solid #999;
+        margin-bottom: 1.0rem;
+
+        a, a:visited {
+            color: #278438;
+        }
+    }
+
+    .site-title {
+        color: #278438;
+        font-size: 2.0rem;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+    }
+
+    .site-description {
+        margin: 0;
+    }
+
+
+    main {
+        display: flex;
+        min-height: 900px;
+        max-width: 64rem;
+    }
+
+    aside {
+        max-width: 11rem;
+        width: 100%;
+        border-right: 1px solid #CCC;
+        margin-right: 1.0rem;
+        line-height: 1.5rem;
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+        }
+    }
+
+    article {
+        width: 100%;
+        margin: 1.0rem 2.0rem;
+
+        p {
+            max-width: 32rem;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+    }
+
+    .tip {
+        float: left;
+        margin-left: -2.5rem;
+        margin-top: 0.5rem;
+        font-size: 2.0rem;
+    }
+
+    .sidenote {
+        display: inline-block;
+        float: right;
+        clear: right;
+        margin: 0 -15rem 0 0;
+        font-size: 0.875rem;
+        vertical-align: baseline;
+        position: relative;
+
+        max-width: 11rem;
+        width: 100%;
+    }
+
+    .sidenote code {
+        font-size: 0.875rem;
+    }
+
+    @media (max-width: 64rem) {
+        .sidenote { display: none; }
+    }
+
+    @media all and (max-width: 960px) {
+    }
+
+    article footer nav {
+        margin: 4.0rem 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 1px solid #CCC;
+        padding-top: 1.0rem;
+    }
+
+    footer {
+        margin-top: 2.0rem;
+        margin-bottom: 2.0rem;
+    }
+
+    footer p {
+        margin: 0.5rem 0;
+    }
+
+    @media all and (max-width: 640px) {
+        aside {
+            display: none;
+        }
+
+        article {
+            margin: 1.0rem 0;
+        }
+
+        .tip {
+            display: none;
+        }
+    }
+
+}

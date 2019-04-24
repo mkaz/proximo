@@ -1,0 +1,20 @@
+
+/* printed */
+@media print {
+    // hide items
+    header.site-header { display: none; }
+    section.search-bar { display: none; }
+    video { display: none; }
+    nav.widgets { display: none; }
+    div#comments { display: none; }
+    //footer.site-footer { display: none; }
+
+    // need to convert flex to block
+    .wrapper { display: block !important; }
+
+    body { font-size: 16px; }
+
+    // let paper decide max width
+    main { max-width: inherit; }
+    .single article { min-height: inherit; }
+}

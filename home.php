@@ -11,7 +11,7 @@ $previous_year = 1970;
 
 ?>
 
-<main id="main" class="content-area" role="main">
+<main class="content-area" role="main">
     <header class="page-title">
         <h3>
             <?php if ( is_search() ) : ?>

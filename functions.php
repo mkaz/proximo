@@ -16,11 +16,6 @@ function proximo_setup() {
     // Let WordPress manage the document title.
 	add_theme_support( 'title-tag' );
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Top', 'proximo' ),
-	) );
-
     // Add HTML5 support for core markup
 	add_theme_support( 'html5', array(
 		'search-form',
@@ -32,9 +27,6 @@ function proximo_setup() {
 
     // Add support for editor styles
     add_theme_support( 'editor-styles' );
-
-    // Load Charter Font in Editor
-    add_editor_style( 'webfonts/stylesheet.css' );
 
     // Enqueue editor styles
     add_editor_style( 'style-editor.css' );
@@ -97,8 +89,11 @@ add_action( 'widgets_init', 'proximo_widgets_init' );
  * Enqueue scripts and styles.
  */
 function proximo_scripts() {
-	wp_enqueue_style( 'proximo-style', get_stylesheet_uri(), filemtime( get_template_directory() . '/style.css' ) );
-	wp_enqueue_style( 'proximo-fonts', get_template_directory_uri() . '/webfonts/stylesheet.css', filemtime( get_template_directory() . '/webfonts/stylesheet.css' ) );
+    wp_enqueue_style(
+        'proximo-style',
+        get_stylesheet_uri(),
+        filemtime( get_template_directory() . '/style.css' )
+    );
 }
 add_action( 'wp_enqueue_scripts', 'proximo_scripts' );
 

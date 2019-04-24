@@ -1,10 +1,7 @@
 <?php
 /**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ * Header
+ * This header is a sider
  *
  * @package Proximo
  */
@@ -23,25 +20,23 @@
 
 <body <?php body_class(); ?>>
 
-    <header id="masthead" class="site-header" role="banner">
-        <section class="header-bar">
-            <div class="site-branding">
-                <h3 class="site-title header-text-color">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                        <?php bloginfo( 'name' ); ?>
-                    </a>
-                </h3>
-                <?php if ( ! empty( get_bloginfo( 'description' ) ) ) : ?>
-                    <h4 class="site-description"><?php bloginfo( 'description'); ?></h4>
-                <?php endif; ?>
-            </div>
+<div class="wrapper">
 
-            <nav id="site-navigation" class="main-navigation header-text-color" role="navigation">
-                <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'top-menu' ) ); ?>
-            </nav>
-        </section>
+    <header class="site-header" role="banner">
+
+        <h3 class="site-title header-text-color">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                <?php bloginfo( 'name' ); ?>
+            </a>
+        </h3>
+        <?php if ( ! empty( get_bloginfo( 'description' ) ) ) : ?>
+            <h4 class="site-description"><?php bloginfo( 'description'); ?></h4>
+        <?php endif; ?>
+
+        <aside>
+            <?php get_search_form(); ?>
+            <?php get_sidebar(); ?>
+        </aside>
+
     </header>
-    <section class="search-bar" role="search">
-        <?php get_search_form(); ?>
-    </section>
-    <div id="content" class="wrapper">
+

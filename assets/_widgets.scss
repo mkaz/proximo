@@ -1,32 +1,9 @@
+
 .widgets {
     width: 100%;
-    background-color: $grey1;
-    color: #FFF;
-    margin-top: 64px;
 }
-
-.widget-area {
-    max-width: 860px;
-    min-width: 200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 4%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    a, a:visited {
-        color: $color_footer_link;
-    }
-
-    a:hover {
-        color: $accent3;
-    }
-}
-
 
 .widget {
-    max-width: 340px;
     margin: 24px 0;
     padding-bottom: 24px;
 

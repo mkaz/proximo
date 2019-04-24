@@ -42,7 +42,7 @@ function proximo_posted_on() {
 }
 
 /**
- * Prints HTML with meta information for the categories, tags and comments.
+ * Prints HTML with meta information for the categories, tags
  */
 function proximo_entry_footer() {
     // Hide category and tag text for pages.
@@ -55,11 +55,6 @@ function proximo_entry_footer() {
         }
     }
 
-    if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-        echo '<span class="comments-link">';
-        comments_popup_link( esc_html__( 'Leave a comment', 'proximo' ), esc_html__( '1 Comment', 'proximo' ), esc_html__( '% Comments', 'proximo' ) );
-        echo '</span>';
-    }
 }
 
 /**

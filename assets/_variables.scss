@@ -1,4 +1,6 @@
 
+// Colors & Fonts
+
 $grey0: #212529;
 $grey1: #353A3F;
 $grey2: #4A5056;
@@ -24,38 +26,8 @@ $yellow5: #FFF6B3;
 
 $magenta: #F30899;
 
-$color_background-hr: $grey5;
-$color_background-button: $grey7;
 
-$color_text-input: #666;
-$color_text-input-focus: #111;
+$font-main: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 
-$color_link: #005DAC;
-$color_link-visited:#005DAC;
+$font-code: Hack, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
-$color_border-button: #ccc #ccc #bbb;
-$color_border-button-hover: #ccc #bbb #aaa;
-$color_border-button-focus: #aaa #bbb #bbb;
-$color_border-input: #ccc;
-$color_border-abbr: #666;
-
-$header-text-color: #FE8019;
-
-$color_footer_background: #444444;
-$color_footer_text: #FFFFFF;
-$color_footer_link: #FABD2F;
-
-// Typefaces
-$font_main: "Charter", Georgia, serif;
-$font_main_size: 20px;
-$font_line-height-body: 1.5;
-
-$font_headers: "Charter-Bold", Georgia, serif;
-$font_system: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-
-$font_code: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
-$font_code_size: 16px;
-$font_code_color: $magenta;
-$font_code_line-height: 1.6;
-
-$border-struct-style: 1px solid #ccc;

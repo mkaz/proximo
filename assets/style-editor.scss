@@ -4,7 +4,7 @@
 
 body {
 	color: #111111;
-	font-family: 'Charter', Georgia, serif;
+	font-family: $font-main;
 	font-size: 18px;
 	line-height: 1.5;
 }
@@ -12,15 +12,6 @@ body {
 p {
 	font-size: 18px;
     max-width: 32rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Charter-Bold', Georgia, serif;
 }
 
 h1 { font-size: 2.0rem; }
@@ -32,16 +23,15 @@ h6 { font-size: 1.00rem; }
 
 
 .editor-post-title__block .editor-post-title__input {
-	font-family: 'Charter-Bold', Georgia, serif;
 	font-size: 2.0rem;
 }
 
 
 .editor-rich-text__tinymce code,
 .code {
-	font-family: $font_code;
-	font-size: $font_code_size;
-	color: $font_code_color;
+	font-family: $font-code;
+	font-size: 16px;
+	color: $magenta;
 	background-color: none;
 }
 
