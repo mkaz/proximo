@@ -33,9 +33,6 @@ https://github.com/mkaz/proximo
 
 Theme initially generated from https://components.underscores.me/ by forking this repo https://github.com/Automattic/theme-components
 
-Uses [Bitsream Charter font](https://en.wikipedia.org/wiki/Bitstream_Charter) which was relased under [this open license](http://mirror.hmc.edu/ctan/fonts/charter/readme.charter).
-
-
 
 ## License
 
