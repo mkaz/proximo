@@ -7,28 +7,18 @@
  * @package Proximo
  */
 
-function proximo_get_time_tag() {
-    $time_tag = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
-    if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-        $time_tag = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
-    }
-
-    return sprintf( $time_tag,
-        esc_attr( get_the_date( 'c' ) ),
-        esc_html( get_the_date() ),
-        esc_attr( get_the_modified_date( 'c' ) ),
-        esc_html( get_the_modified_date() )
-    );
-}
 
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */
 function proximo_posted_on() {
-    $time_string = proximo_get_time_tag();
+    $time_string = sprintf( '<time class="entry-date published" datetime="%1$s">%2$s</time>',
+        esc_attr( get_the_date( 'c' ) ),
+        esc_html( get_the_date() )
+    );
 
     $posted_on = sprintf(
-        esc_html_x( 'Posted on %s', 'post date', 'proximo' ),
+        'Posted on %s',
         '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
     );
 

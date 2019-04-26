@@ -3,12 +3,18 @@
 
 /* Sidenotes style for front-end */
 
+p .sidenote {
+    margin-right: -15rem;
+}
+
 .sidenote {
     display: inline-block;
     float: right;
     clear: right;
-    margin: 0 -15rem 0 0;
+    margin: 0;
+    font-family: $font-serif;
     font-size: 0.875rem;
+    line-height: 1.125;
     vertical-align: baseline;
     position: relative;
 

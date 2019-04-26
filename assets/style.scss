@@ -71,6 +71,8 @@ header.site-header {
     }
 }
 
+body.parent-pageid-1430 header.site-header .site-title a,
+body.parent-pageid-1430 header.site-header .site-title a:visited,
 body.page-id-1430 header.site-header .site-title a,
 body.page-id-1430 header.site-header .site-title a:visited {
     color: #278438;
@@ -109,6 +111,12 @@ aside {
         margin-top: 0;
         padding-left: 0;
         list-style: none;
+    }
+
+    li {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
@@ -227,16 +235,6 @@ table.center td {
     display: block;
 }
 
-.byline,
-.updated:not(.published){
-    display: none;
-}
-
-.single .byline,
-.group-blog .byline {
-    display: inline;
-}
-
 .entry-header {
     margin-bottom: 8px;
 }
@@ -311,12 +309,6 @@ article {
     }
 }
 
-
-.page-links {
-    clear: both;
-    margin: 0 0 1.5em;
-}
-
 .site-footer {
     margin: 3.0rem -4.5% 0 -4.5%;
     padding: 1.0rem 1.0rem;
@@ -344,7 +336,6 @@ article {
     }
 }
 
-
 .page-title {
 
     margin-bottom: 32px;
@@ -353,11 +344,6 @@ article {
         margin: 0;
         font-weight: 700;
     }
-}
-
-.post-index ul {
-    padding-left: 0;
-    list-style: none;
 }
 
 .highlight {
@@ -373,18 +359,6 @@ article {
 .sharedaddy {
     margin: 32px 0 16px 0;
 }
-
-ol.comment-list {
-    max-width: 32rem;
-}
-
-.comment-content a {
-    word-wrap: break-word;
-}
-.bypostauthor {
-    display: block;
-}
-
 
 /* Gutenberg styles */
 .wp-block-image.alignfull {

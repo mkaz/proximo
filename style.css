@@ -33,7 +33,7 @@ header.site-header { width: 100%; padding: 2rem 0 1rem 0; border-bottom: 1px sol
 
 .site-title a:hover { text-decoration: none; }
 
-body.page-id-1430 header.site-header .site-title a, body.page-id-1430 header.site-header .site-title a:visited { color: #278438; }
+body.parent-pageid-1430 header.site-header .site-title a, body.parent-pageid-1430 header.site-header .site-title a:visited, body.page-id-1430 header.site-header .site-title a, body.page-id-1430 header.site-header .site-title a:visited { color: #278438; }
 
 .site-description { margin-top: -0.5rem; margin-bottom: 0.25rem; font-size: 1.1rem; font-style: italic; font-weight: normal; color: #878E95; }
 
@@ -44,6 +44,8 @@ aside { max-width: 12rem; width: 100%; padding-right: 1.0rem; border-right: 1px 
 aside h2 { font-size: 1.125rem; margin-bottom: 0.125rem; }
 
 aside ul { margin-top: 0; padding-left: 0; list-style: none; }
+
+aside li { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 article, section.content-area { max-width: 46rem; width: 100%; margin: 0 0 0 2rem; min-height: 900px; }
 
@@ -87,10 +89,6 @@ table.center th, table.center td { text-align: center; }
 
 .sticky { display: block; }
 
-.byline, .updated:not(.published) { display: none; }
-
-.single .byline, .group-blog .byline { display: inline; }
-
 .entry-header { margin-bottom: 8px; }
 
 .entry-meta { margin: -0.5rem 0 2.0rem 0; font-size: 0.9rem; }
@@ -115,8 +113,6 @@ article footer nav { margin: 4.0rem 0 0 0; display: flex; justify-content: space
 
 article footer p { margin: 0.5rem 0; }
 
-.page-links { clear: both; margin: 0 0 1.5em; }
-
 .site-footer { margin: 3.0rem -4.5% 0 -4.5%; padding: 1.0rem 1.0rem; background-color: #353A3F; font-size: 0.875rem; color: white; }
 
 .site-footer a, .site-footer a:visited { color: white; }
@@ -131,19 +127,11 @@ article footer p { margin: 0.5rem 0; }
 
 .page-title h5 { margin: 0; font-weight: 700; }
 
-.post-index ul { padding-left: 0; list-style: none; }
-
 .highlight { padding: 6px 8px; background-color: #FFF088; border-radius: 4px; }
 
 .search-submit { margin-top: 8px; }
 
 .sharedaddy { margin: 32px 0 16px 0; }
-
-ol.comment-list { max-width: 32rem; }
-
-.comment-content a { word-wrap: break-word; }
-
-.bypostauthor { display: block; }
 
 /* Gutenberg styles */
 .wp-block-image.alignfull { max-width: none; margin-left: -16%; margin-right: -16%; }
@@ -182,11 +170,15 @@ ol.comment-list { max-width: 32rem; }
 
 .navigation li a:hover, .navigation li.active a { background-color: #E1230A; }
 
-.post-index { max-width: 720px; width: 100%; }
+.post-index { width: 100%; }
+
+.post-index h4 { margin-bottom: 0.25rem; }
 
 .post-index article { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #DFE2E5; }
 
 .post-index article:last-child { border-bottom: none; }
+
+.post-index ul { margin-top: 0; padding-left: 0; list-style: none; }
 
 .post-index li.hentry { margin-bottom: 0.5rem; vertical-align: top; }
 
@@ -196,7 +188,7 @@ ol.comment-list { max-width: 32rem; }
 
 .widgets { width: 100%; }
 
-.widget { margin: 24px 0; padding-bottom: 24px; }
+.widget { margin: 1.5rem 0; padding-bottom: 0.5rem; }
 
 .widget select { max-width: 100%; }
 
@@ -209,7 +201,9 @@ section.jetpack-social-menu h2.widget-title { margin-bottom: 16px; }
 .jetpack-social-navigation-genericons a[href*="mkaz.com"]::before { content: "\f205"; }
 
 /* Sidenotes style for front-end */
-.sidenote { display: inline-block; float: right; clear: right; margin: 0 -15rem 0 0; font-size: 0.875rem; vertical-align: baseline; position: relative; max-width: 11rem; width: 100%; }
+p .sidenote { margin-right: -15rem; }
+
+.sidenote { display: inline-block; float: right; clear: right; margin: 0; font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif; font-size: 0.875rem; line-height: 1.125; vertical-align: baseline; position: relative; max-width: 11rem; width: 100%; }
 
 .sidenote code { font-size: 0.875rem; }
 
