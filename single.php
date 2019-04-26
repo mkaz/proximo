@@ -9,16 +9,12 @@
 
 get_header(); ?>
 
-<main class="content-area" role="main">
+<?php
+while ( have_posts() ) : the_post();
 
-    <?php
-    while ( have_posts() ) : the_post();
+    get_template_part( 'inc/content', get_post_format() );
 
-    	get_template_part( 'inc/content', get_post_format() );
-
-    endwhile; // End of the loop.
-    ?>
-
-</main>
+endwhile; // End of the loop.
+?>
 
 <?php get_footer(); ?>

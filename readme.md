@@ -9,26 +9,6 @@ See it in action at: https://mkaz.blog/
 
 Blog carefully my friends.
 
-You may also be interested in cousin plugins that enhance the experience:
-
-* Tufte-like Sidenotes: https://github.com/mkaz/proximo-sidenote
-* Barely Fancy Tips: https://github.com/mkaz/proximo-tips
-
-
-##  Build
-
-The stylesheets are Sassy. Check out Makefile, they can be built using something like:
-
-	node-sass --output-style compact -o ./ ./assets/style.scss
-
-
-## Contribute
-
-Yes, please. Issues, code, whatever you've got.
-
-https://github.com/mkaz/proximo
-
-
 ## Credits
 
 Theme initially generated from https://components.underscores.me/ by forking this repo https://github.com/Automattic/theme-components

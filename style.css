@@ -13,11 +13,11 @@ Text Domain: proximo
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-html { box-sizing: border-box; font-size: 16px; }
+html { box-sizing: border-box; font-size: 16px; line-height: 1.25; }
 
 *, *:before, *:after { box-sizing: inherit; }
 
-body { padding: 0; margin: 0; background-color: #FAFAFA; color: #111111; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
+body { padding: 0 4%; margin: 0; background-color: #FAFAFA; color: #111111; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
 
 a, a:visited, label.margin-toggle { color: #005DAC; text-decoration: none; }
 
@@ -25,26 +25,30 @@ a:hover, label.margin-toggle:hover { color: #FB4B34; text-decoration: underline;
 
 input { max-width: 100%; }
 
-.wrapper { display: flex; justify-content: flex-start; margin-top: 32px; padding: 0 4%; }
+header.site-header { width: 100%; padding: 2rem 0 1rem 0; border-bottom: 1px solid #999; margin-bottom: 1.0rem; }
 
-header.site-header { max-width: 12rem; padding-right: 1.0rem; border-right: 1px solid #999; margin-right: 1.0rem; }
-
-header.site-header ul { padding-left: 0; list-style: none; }
-
-.site-title { margin-top: 0; font-size: 2.0rem; }
+.site-title { margin-top: 0; margin-bottom: 0.25rem; font-size: 2.0rem; }
 
 .site-title a, .site-title a:visited { color: #E1230A; }
 
 .site-title a:hover { text-decoration: none; }
 
-.site-description { margin-top: -0.5rem; font-size: 1.1rem; font-style: italic; font-weight: normal; color: #878E95; }
+body.page-id-1430 header.site-header .site-title a, body.page-id-1430 header.site-header .site-title a:visited { color: #278438; }
 
-main { max-width: 46rem; width: 100%; margin: 0 0 0 1rem; min-height: 900px; }
+.site-description { margin-top: -0.5rem; margin-bottom: 0.25rem; font-size: 1.1rem; font-style: italic; font-weight: normal; color: #878E95; }
 
-@media screen and (max-width: 46rem) { main { margin-left: 0; }
-  aside { display: none; }
-  .wrapper { display: block; }
-  header.site-header { max-width: 100%; padding: 0 0 0.5rem 0; margin: 0 0 0.5rem 0; border-right: none; border-bottom: 1px solid #999; } }
+main { display: flex; justify-content: flex-start; max-width: 64rem; min-height: 900px; }
+
+aside { max-width: 12rem; width: 100%; padding-right: 1.0rem; border-right: 1px solid #999; margin-right: 1.0rem; }
+
+aside h2 { font-size: 1.125rem; margin-bottom: 0.125rem; }
+
+aside ul { margin-top: 0; padding-left: 0; list-style: none; }
+
+article, section.content-area { max-width: 46rem; width: 100%; margin: 0 0 0 2rem; min-height: 900px; }
+
+@media screen and (max-width: 46rem) { main, article { margin-left: 0; }
+  aside { display: none; } }
 
 pre, code { font-size: 16px; font-family: Hack, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; color: #F30899; }
 
@@ -63,15 +67,15 @@ figure.fullwidth { max-width: 100%; }
 
 figcaption { color: #666; font-size: 0.85rem; }
 
-blockquote { max-width: 70%; margin: 2.0rem 0; padding-left: 1.0rem; border-left: 0.5rem solid #DFE2E5; }
+blockquote { max-width: 70%; margin: 2.0rem 0; padding-left: 1.0rem; border-left: 0.5rem solid #DFE2E5; font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif; }
 
-blockquote footer { font-family: 'Charter'; }
+blockquote footer { font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif; }
 
 table { margin: 0 0 1.5em; width: 100%; }
 
 table.code { empty-cells: show; }
 
-table.code th, table.code td { font-family: Hack, SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 0.85rem; padding: 4px 32px 4px 0; line-height: 1.1rem; border-bottom: 1px solid #DFE2E5; text-align: left; }
+table.code th, table.code td { font-family: Hack, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 0.85rem; padding: 4px 32px 4px 0; line-height: 1.1rem; border-bottom: 1px solid #DFE2E5; text-align: left; }
 
 table.code th:last-child, table.code td:last-child { padding-right: 0; }
 
@@ -80,8 +84,6 @@ table.center th, table.center td { text-align: center; }
 .content-area table { empty-cells: show; font-size: 0.9em; width: 100%; margin-bottom: 1.1em; }
 
 @media screen and (max-width: 420px) { ul { list-style: none; padding-left: 0; } }
-
-.single article { min-height: 50vh; }
 
 .sticky { display: block; }
 
@@ -99,23 +101,31 @@ table.center th, table.center td { text-align: center; }
 
 .entry-content p { margin: 1.0rem 0 1.5rem 0; max-width: 32rem; }
 
+.entry-content dl { max-width: 32rem; display: flex; flex-flow: row wrap; margin-bottom: 1.5rem; }
+
+.entry-content dt { flex-basis: 25%; padding: 0.5rem 1.0rem; border-bottom: 1px solid #E0E0E0; }
+
+.entry-content dd { flex-basis: 70%; flex-grow: 1; margin: 0; padding: 0.5rem 1.0rem; border-bottom: 1px solid #E0E0E0; }
+
 .entry-footer { margin: 2rem 0 1rem 0; }
 
-dl { max-width: 32rem; display: flex; flex-flow: row wrap; margin-bottom: 1.5rem; }
+article footer { margin-top: 2.0rem; margin-bottom: 2.0rem; }
 
-dt { flex-basis: 25%; padding: 0.5rem 1.0rem; border-bottom: 1px solid #E0E0E0; }
+article footer nav { margin: 4.0rem 0 0 0; display: flex; justify-content: space-between; width: 100%; border-top: 1px solid #CCC; padding-top: 1.0rem; }
 
-dd { flex-basis: 70%; flex-grow: 1; margin: 0; padding: 0.5rem 1.0rem; border-bottom: 1px solid #E0E0E0; }
+article footer p { margin: 0.5rem 0; }
 
 .page-links { clear: both; margin: 0 0 1.5em; }
 
-.site-footer { margin-top: 3.0rem; padding: 1.0rem 1.0rem; background-color: #353A3F; font-size: 0.875rem; color: white; }
+.site-footer { margin: 3.0rem -4.5% 0 -4.5%; padding: 1.0rem 1.0rem; background-color: #353A3F; font-size: 0.875rem; color: white; }
 
 .site-footer a, .site-footer a:visited { color: white; }
 
 .site-footer a:hover { color: #FB4B34; }
 
 .site-footer .sep { margin: 0 1.0rem; }
+
+@media screen and (max-width: 46rem) { .site-footer .sep { display: block; } }
 
 .page-title { margin-bottom: 32px; }
 
@@ -184,60 +194,27 @@ ol.comment-list { max-width: 32rem; }
 
 .post-index time { display: inline-block; margin-left: 1.0rem; vertical-align: baseline; }
 
-.page-template-page-tut header { width: 100%; padding: 2rem 0 1rem 1rem; border-bottom: 1px solid #999; margin-bottom: 1.0rem; }
-
-.page-template-page-tut header a, .page-template-page-tut header a:visited { color: #278438; }
-
-.page-template-page-tut .site-title { color: #278438; font-size: 2.0rem; font-weight: 700; margin-bottom: 0.25rem; }
-
-.page-template-page-tut .site-description { margin: 0; }
-
-.page-template-page-tut main { display: flex; min-height: 900px; max-width: 64rem; }
-
-.page-template-page-tut aside { max-width: 11rem; width: 100%; border-right: 1px solid #CCC; margin-right: 1.0rem; line-height: 1.5rem; }
-
-.page-template-page-tut aside ul { padding-left: 0; list-style: none; }
-
-.page-template-page-tut article { width: 100%; margin: 1.0rem 2.0rem; }
-
-.page-template-page-tut article p { max-width: 32rem; }
-
-.page-template-page-tut article h1 { margin-top: 0; }
-
-.page-template-page-tut .tip { float: left; margin-left: -2.5rem; margin-top: 0.5rem; font-size: 2.0rem; }
-
-.page-template-page-tut .sidenote { display: inline-block; float: right; clear: right; margin: 0 -15rem 0 0; font-size: 0.875rem; vertical-align: baseline; position: relative; max-width: 11rem; width: 100%; }
-
-.page-template-page-tut .sidenote code { font-size: 0.875rem; }
-
-@media (max-width: 64rem) { .page-template-page-tut .sidenote { display: none; } }
-
-.page-template-page-tut article footer nav { margin: 4.0rem 0 0 0; display: flex; justify-content: space-between; width: 100%; border-top: 1px solid #CCC; padding-top: 1.0rem; }
-
-.page-template-page-tut footer { margin-top: 2.0rem; margin-bottom: 2.0rem; }
-
-.page-template-page-tut footer p { margin: 0.5rem 0; }
-
-@media all and (max-width: 640px) { .page-template-page-tut aside { display: none; }
-  .page-template-page-tut article { margin: 1.0rem 0; }
-  .page-template-page-tut .tip { display: none; } }
-
 .widgets { width: 100%; }
 
 .widget { margin: 24px 0; padding-bottom: 24px; }
 
 .widget select { max-width: 100%; }
 
-.widget h2.widget-title { font-size: 18px; margin-bottom: 8px; }
-
-.widget ul { margin: 0; padding: 0; list-style: square; list-style-position: inside; }
-
-.widget li { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
-
 section.jetpack-social-menu { margin-top: 16px; max-width: 140px; }
 
 section.jetpack-social-menu h2.widget-title { margin-bottom: 16px; }
 
-.jetpack-social-navigation-genericons a::before { font-size: 32px !important; width: 2em; height: 2em; margin: 0 32px 32px 0; }
+.jetpack-social-navigation-genericons a::before { font-size: 32px !important; width: 0.50rem !important; margin: 0 32px 32px 0; }
 
 .jetpack-social-navigation-genericons a[href*="mkaz.com"]::before { content: "\f205"; }
+
+/* Sidenotes style for front-end */
+.sidenote { display: inline-block; float: right; clear: right; margin: 0 -15rem 0 0; font-size: 0.875rem; vertical-align: baseline; position: relative; max-width: 11rem; width: 100%; }
+
+.sidenote code { font-size: 0.875rem; }
+
+@media (max-width: 64rem) { .sidenote { display: none; } }
+
+.wp-block-proximo-tips i, .tip { float: left; margin-left: -2.5rem; font-size: 2.0rem; font-style: normal; }
+
+@media screen and (max-width: 800px) { .tip { display: none; } }

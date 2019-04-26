@@ -1,0 +1,15 @@
+
+.wp-block-proximo-tips i,
+.tip {
+    float: left;
+    margin-left: -2.5rem;
+    font-size: 2.0rem;
+    font-style: normal;
+}
+
+
+@media screen and (max-width: 800px) {
+    .tip {
+        display: none;
+    }
+}

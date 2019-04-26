@@ -10,24 +10,6 @@
     select {
       max-width: 100%;
     }
-
-    h2.widget-title {
-      font-size: 18px;
-      margin-bottom: 8px;
-    }
-
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: square;
-      list-style-position: inside;
-    }
-
-    li {
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-    }
 }
 
 section.jetpack-social-menu {
@@ -41,8 +23,7 @@ section.jetpack-social-menu {
 
 .jetpack-social-navigation-genericons a::before {
     font-size: 32px !important;
-    width: 2em;
-    height: 2em;
+    width: 0.50rem !important;
     margin: 0 32px 32px 0;
 }
 

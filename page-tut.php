@@ -3,7 +3,38 @@
  * Template Name: Tutorial Page
  *
  * @package Proximo
+ *
  */
+
+$parent_id = ( $post->post_parent ) ? $post->post_parent : $post->ID;
+$parent = get_post( $parent_id );
+
+// get previous / next pages
+
+$pagelist = get_pages("child_of=".$parent_id."&sort_column=menu_order&sort_order=asc");
+$prev = false;
+$next = false;
+$onemore = false;
+foreach ($pagelist as $p) {
+    if ( $onemore ) {
+        $next = $p;
+        break;
+    }
+
+    if ( $post->ID === $p->ID  ) {
+        $onemore = true;
+    } else {
+        $prev = $p;
+    }
+
+}
+
+// if this is the parent post, hardcode
+if ( $post->ID === $parent_id ) {
+    $prev = false;
+    $next = $pagelist[0];
+}
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -18,22 +49,27 @@
 
 <body <?php body_class(); ?>>
 
-    <header class="tutorial-header">
-        <h3 class="site-title"> <a href="/vim/">Working with Vim</a> </h3>
+    <header class="site-header">
+        <h3 class="site-title">
+            <a href="<?php echo esc_attr( get_permalink( $parent_id ) ); ?>">
+                <?php echo esc_html( $parent->post_title ); ?>
+            </a>
+        </h3>
     </header>
 
     <main>
+
         <aside>
-            <h3>Contents</h3>
+            <h2>Contents</h2>
             <ul>
 
 <?php
 
-$post_id = ( $post->post_parent ) ? $post->post_parent : $post->ID;
 $args = array(
     'post_type'      => 'page',
     'posts_per_page' => -1,
-    'post_parent'    => $post_id,
+    'post_parent'    => $parent_id,
+    'orderby'        => 'menu_order',
     'order'          => 'ASC',
  );
 
@@ -54,28 +90,28 @@ if ( $parent->have_posts() ) : ?>
 
         <article>
             <?php while ( have_posts() ) : the_post(); ?>
-                <h1><?php the_title(); ?></h1>
                 <?php the_content(); ?>
             <?php endwhile; ?>
             <footer>
                 <nav>
-                    <span class="prev">
-                        <a href=""> &#171; {{ .PrevTitle }} </a>
-                    </span>
-                    <span class="next">
-                        <a href=""> {{ .NextTitle }} &#187; </a>
-                    </span>
+                    <?php if ( $prev ) : ?><span class="prev">
+                        <a href="<?php echo esc_attr( get_permalink( $prev->ID ) ); ?>">
+                            &#171; <?php echo esc_html( $prev->post_title ); ?>
+                        </a>
+                    </span><?php endif; ?>
+                    <?php if ( $next ) : ?><span class="next">
+                        <a href="<?php echo esc_attr( get_permalink( $next->ID ) ); ?>">
+                            <?php echo esc_html( $next->post_title ); ?> &#187;
+                        </a>
+                    </span><?php endif; ?>
                 </nav>
-
-                <div style="margin-top: 5rem">
-                    Contribute: <a href="https://github.com/mkaz/working-with-vim/blob/master/{{.SourceFile}}">source</a>
-                </div>
 
             </footer>
         </article>
 
     </main>
 
+</div>
 <?php
 get_footer();
 

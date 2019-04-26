@@ -11,7 +11,8 @@ $previous_year = 1970;
 
 ?>
 
-<main class="content-area" role="main">
+<section class="content-area" role="main">
+
     <header class="page-title">
         <h3>
             <?php if ( is_search() ) : ?>
@@ -55,6 +56,6 @@ $previous_year = 1970;
 
     <?php proximo_pagination(); ?>
 
-</main>
+</section>
 
 <?php get_footer(); ?>

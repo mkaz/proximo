@@ -20,8 +20,6 @@
 
 <body <?php body_class(); ?>>
 
-<div class="wrapper">
-
     <header class="site-header" role="banner">
 
         <h3 class="site-title header-text-color">
@@ -33,10 +31,11 @@
             <h4 class="site-description"><?php bloginfo( 'description'); ?></h4>
         <?php endif; ?>
 
+    </header>
+
+    <main>
+
         <aside>
-            <?php get_search_form(); ?>
             <?php get_sidebar(); ?>
         </aside>
-
-    </header>
 

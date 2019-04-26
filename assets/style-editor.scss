@@ -1,17 +1,25 @@
 
 /* Gutenberg editor style */
 @import "variables";
+@import "sidenote-editor";
+@import "tips";
 
 body {
 	color: #111111;
 	font-family: $font-main;
-	font-size: 18px;
-	line-height: 1.5;
+	font-size: 16px;
+	line-height: 1.25;
 }
 
 p {
-	font-size: 18px;
+	font-size: 16px;
+    line-height: 1.25;
     max-width: 32rem;
+}
+
+.editor-rich-text__tinymce {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 h1 { font-size: 2.0rem; }
@@ -21,11 +29,22 @@ h4 { font-size: 1.25rem; }
 h5 { font-size: 1.15rem; }
 h6 { font-size: 1.00rem; }
 
+blockquote {
+	max-width: 70%;
+	margin: 2.0rem 0;
+	padding-left: 1.0rem;
+	border-left: 0.5rem solid $grey6;
+    font-family: $font-serif;
+    line-height: 1.5;
+}
+
+blockquote footer {
+	font-family: $font-serif;
+}
 
 .editor-post-title__block .editor-post-title__input {
 	font-size: 2.0rem;
 }
-
 
 .editor-rich-text__tinymce code,
 .code {
@@ -39,3 +58,4 @@ h6 { font-size: 1.00rem; }
 .alignright {
     max-width: 20rem;
 }
+

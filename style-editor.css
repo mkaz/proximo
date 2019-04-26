@@ -1,7 +1,16 @@
 /* Gutenberg editor style */
-body { color: #111111; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; font-size: 18px; line-height: 1.5; }
+/* Sidenote style for editor */
+.wp-block-proximo-sidenote { display: inline-block; max-width: 10rem; margin-left: 70%; margin-right: -10%; font-size: 0.85rem; }
 
-p { font-size: 18px; max-width: 32rem; }
+.wp-block-proximo-tips i, .tip { float: left; margin-left: -2.5rem; font-size: 2.0rem; font-style: normal; }
+
+@media screen and (max-width: 800px) { .tip { display: none; } }
+
+body { color: #111111; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; font-size: 16px; line-height: 1.25; }
+
+p { font-size: 16px; line-height: 1.25; max-width: 32rem; }
+
+.editor-rich-text__tinymce { font-size: 16px; line-height: 1.5; }
 
 h1 { font-size: 2.0rem; }
 
@@ -14,6 +23,10 @@ h4 { font-size: 1.25rem; }
 h5 { font-size: 1.15rem; }
 
 h6 { font-size: 1.00rem; }
+
+blockquote { max-width: 70%; margin: 2.0rem 0; padding-left: 1.0rem; border-left: 0.5rem solid #DFE2E5; font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif; line-height: 1.5; }
+
+blockquote footer { font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif; }
 
 .editor-post-title__block .editor-post-title__input { font-size: 2.0rem; }
 

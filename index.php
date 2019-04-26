@@ -9,7 +9,7 @@ get_header();
 
 ?>
 
-<main class="content-area" role="main">
+<section class="content-area" role="main">
     <header class="page-title">
         <h3>
             <?php if ( is_search() ) : ?>
@@ -44,6 +44,6 @@ get_header();
 
     <?php proximo_pagination(); ?>
 
-</main>
+</section>
 
 <?php get_footer(); ?>

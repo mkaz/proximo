@@ -19,6 +19,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 html {
     box-sizing: border-box;
     font-size: 16px;
+    line-height: 1.25;
 }
 
 *,
@@ -28,7 +29,7 @@ html {
 }
 
 body {
-    padding: 0;
+    padding: 0 4%;
     margin: 0;
 	background-color: #FAFAFA;
 	color: #111111;
@@ -49,30 +50,16 @@ input {
     max-width: 100%;
 }
 
-// this wraps each page main
-.wrapper {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 32px;
-    padding: 0 4%;
-}
-
-// really more of a sider ;-)
 header.site-header {
-    max-width: 12rem;
-
-    padding-right: 1.0rem;
-    border-right: 1px solid #999;
-    margin-right: 1.0rem;
-
-    ul {
-        padding-left: 0;
-        list-style: none;
-    }
+    width: 100%;
+    padding: 2rem 0 1rem 0;
+    border-bottom: 1px solid #999;
+    margin-bottom: 1.0rem;
 }
 
 .site-title {
     margin-top: 0;
+    margin-bottom: 0.25rem;
     font-size: 2.0rem;
 
     a, a:visited {
@@ -84,8 +71,14 @@ header.site-header {
     }
 }
 
+body.page-id-1430 header.site-header .site-title a,
+body.page-id-1430 header.site-header .site-title a:visited {
+    color: #278438;
+}
+
 .site-description {
 	margin-top: -0.5rem;
+    margin-bottom: 0.25rem;
 	font-size: 1.1rem;
     font-style: italic;
     font-weight: normal;
@@ -93,15 +86,43 @@ header.site-header {
 }
 
 main {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 64rem;
+    min-height: 900px;
+}
+
+aside {
+    max-width: 12rem;
+    width: 100%;
+
+    padding-right: 1.0rem;
+    border-right: 1px solid #999;
+    margin-right: 1.0rem;
+
+    h2 {
+        font-size: 1.125rem;
+        margin-bottom: 0.125rem;
+    }
+
+    ul {
+        margin-top: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+}
+
+article,
+section.content-area {
     max-width: 46rem;
     width: 100%;
-	margin: 0 0 0 1rem;
+	margin: 0 0 0 2rem;
     min-height: 900px;
 }
 
 @media screen and (max-width: 46rem) {
 
-    main {
+    main, article {
         margin-left: 0;
     }
 
@@ -109,17 +130,6 @@ main {
     // probably click to show
     aside {
         display: none;
-    }
-
-    // remove flex so header above main
-    .wrapper { display: block; }
-
-    header.site-header {
-        max-width: 100%;
-        padding: 0 0 0.5rem 0;
-        margin: 0 0 0.5rem 0;
-        border-right: none;
-        border-bottom: 1px solid #999;
     }
 
 }
@@ -165,10 +175,11 @@ blockquote {
 	margin: 2.0rem 0;
 	padding-left: 1.0rem;
 	border-left: 0.5rem solid $grey6;
+    font-family: $font-serif;
 }
 
 blockquote footer {
-	font-family: 'Charter';
+	font-family: $font-serif;
 }
 
 table {
@@ -180,7 +191,7 @@ table.code {
     empty-cells: show;
 
     th, td {
-        font-family: Hack, SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        font-family: $font-code;
         font-size: 0.85rem;
         padding: 4px 32px 4px 0;
         line-height: 1.1rem;
@@ -210,10 +221,6 @@ table.center td {
         list-style: none;
         padding-left: 0;
     }
-}
-
-.single article {
-    min-height: 50vh;
 }
 
 .sticky {
@@ -254,32 +261,56 @@ table.center td {
         margin: 1.0rem 0 1.5rem 0;
         max-width: 32rem;
     }
+
+    dl {
+        max-width: 32rem;
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 1.5rem;
+    }
+
+    dt {
+        flex-basis: 25%;
+        padding: 0.5rem 1.0rem;
+        border-bottom: 1px solid #E0E0E0;
+    }
+
+    dd {
+        flex-basis: 70%;
+        flex-grow: 1;
+        margin: 0;
+        padding: 0.5rem 1.0rem;
+        border-bottom: 1px solid #E0E0E0;
+    }
+
 }
 
 .entry-footer {
     margin: 2rem 0 1rem 0;
 }
 
-dl {
-    max-width: 32rem;
-    display: flex;
-    flex-flow: row wrap;
-    margin-bottom: 1.5rem;
+article {
+
+    footer {
+
+        margin-top: 2.0rem;
+        margin-bottom: 2.0rem;
+
+        nav {
+            margin: 4.0rem 0 0 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            border-top: 1px solid #CCC;
+            padding-top: 1.0rem;
+        }
+
+        p {
+            margin: 0.5rem 0;
+        }
+    }
 }
 
-dt {
-    flex-basis: 25%;
-    padding: 0.5rem 1.0rem;
-    border-bottom: 1px solid #E0E0E0;
-}
-
-dd {
-    flex-basis: 70%;
-    flex-grow: 1;
-    margin: 0;
-    padding: 0.5rem 1.0rem;
-    border-bottom: 1px solid #E0E0E0;
-}
 
 .page-links {
     clear: both;
@@ -287,7 +318,7 @@ dd {
 }
 
 .site-footer {
-    margin-top: 3.0rem;
+    margin: 3.0rem -4.5% 0 -4.5%;
     padding: 1.0rem 1.0rem;
     background-color: $grey1;
 
@@ -307,6 +338,11 @@ dd {
     }
 }
 
+@media screen and (max-width: 46rem) {
+    .site-footer .sep {
+        display: block;
+    }
+}
 
 
 .page-title {
@@ -397,4 +433,6 @@ ol.comment-list {
 @import "pagination";
 @import "page-types";
 @import "widgets";
+@import "sidenote";
+@import "tips";
 
