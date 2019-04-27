@@ -78,6 +78,13 @@ body.page-id-1430 header.site-header .site-title a:visited {
     color: #278438;
 }
 
+body.parent-pageid-1465 header.site-header .site-title a,
+body.parent-pageid-1465 header.site-header .site-title a:visited,
+body.page-id-1465 header.site-header .site-title a,
+body.page-id-1465 header.site-header .site-title a:visited {
+    color: #19CBFB;
+}
+
 .site-description {
 	margin-top: -0.5rem;
     margin-bottom: 0.25rem;
@@ -130,7 +137,9 @@ section.content-area {
 
 @media screen and (max-width: 46rem) {
 
-    main, article {
+    main,
+    article,
+    section.content-area {
         margin-left: 0;
     }
 
@@ -310,7 +319,7 @@ article {
 }
 
 .site-footer {
-    margin: 3.0rem -4.5% 0 -4.5%;
+    margin: 3.0rem -4% 1rem -4%;
     padding: 1.0rem 1.0rem;
     background-color: $grey1;
 
