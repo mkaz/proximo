@@ -7,14 +7,13 @@
  * @package Proximo
  */
 
-if ( ! function_exists( 'proximo_setup' ) ) :
-function proximo_setup() {
+add_action( 'after_setup_theme', function() {
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
     // Let WordPress manage the document title.
-	add_theme_support( 'title-tag' );
+    //add_theme_support( 'title-tag' );
 
     // Add HTML5 support for core markup
 	add_theme_support( 'html5', array(
@@ -39,22 +38,10 @@ function proximo_setup() {
     add_theme_support( 'jetpack-social-menu' );
 
     add_filter( 'excerpt_length', function( $length )  { return 30; } );
-}
-endif;
-add_action( 'after_setup_theme', 'proximo_setup' );
 
-
-/**
- * Set the content width in pixels, based on the theme's design and stylesheet.
- *
- * Priority 0 to make it available to lower priority callbacks.
- *
- * @global int $content_width
- */
-function proximo_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'proximo_content_width', 720);
-}
-add_action( 'after_setup_theme', 'proximo_content_width', 0 );
+
+} );
 
 
 /**
@@ -62,7 +49,7 @@ add_action( 'after_setup_theme', 'proximo_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function proximo_widgets_init() {
+add_action( 'widgets_init', function() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'proximo' ),
 		'id'            => 'sidebar-1',
@@ -72,21 +59,19 @@ function proximo_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-}
-add_action( 'widgets_init', 'proximo_widgets_init' );
+});
 
 /**
  * Enqueue scripts and styles.
  */
-function proximo_scripts() {
+add_action( 'wp_enqueue_scripts', function() {
     wp_enqueue_style(
         'proximo-style',
         get_stylesheet_uri(),
         array(),
         filemtime( get_template_directory() . '/style.css' )
     );
-}
-add_action( 'wp_enqueue_scripts', 'proximo_scripts' );
+});
 
 require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/pagination.php';

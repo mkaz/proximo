@@ -8,6 +8,7 @@
 
 $parent_id = ( $post->post_parent ) ? $post->post_parent : $post->ID;
 $parent = get_post( $parent_id );
+$parent_title = ( $parent && ($parent->ID != $post->ID) ) ? $parent->post_title . " - " : "";
 
 // get previous / next pages
 
@@ -42,6 +43,8 @@ if ( $post->ID === $parent_id ) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+<title><?php wp_title( '-', true, 'right' ); ?> <?php echo esc_html($parent_title); ?> mkaz.blog</title>
 
 <?php wp_head(); ?>
 

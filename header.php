@@ -14,6 +14,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<title><?php wp_title( '-', true, 'right' ); ?> mkaz.blog</title>
 <?php wp_head(); ?>
 
 </head>
