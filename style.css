@@ -33,7 +33,7 @@ header.site-header { width: 100%; padding: 2rem 0 1rem 0; border-bottom: 1px sol
 
 .site-title a:hover { text-decoration: none; }
 
-body.parent-pageid-1430 header.site-header .site-title a, body.parent-pageid-1430 header.site-header .site-title a:visited, body.page-id-1430 header.site-header .site-title a, body.page-id-1430 header.site-header .site-title a:visited { color: #278438; }
+body.parent-pageid-1497 header.site-header .site-title a, body.parent-pageid-1497 header.site-header .site-title a:visited, body.page-id-1497 header.site-header .site-title a, body.page-id-1497 header.site-header .site-title a:visited { color: #278438; }
 
 body.parent-pageid-1465 header.site-header .site-title a, body.parent-pageid-1465 header.site-header .site-title a:visited, body.page-id-1465 header.site-header .site-title a, body.page-id-1465 header.site-header .site-title a:visited { color: #19CBFB; }
 
@@ -69,7 +69,7 @@ figure, img, video { display: block; max-width: 100%; width: auto; height: auto;
 
 figure.fullwidth { max-width: 100%; }
 
-figcaption { color: #666; font-size: 0.85rem; }
+figcaption { color: #666; font-size: 0.8125rem; margin-bottom: 2.0rem; }
 
 blockquote { max-width: 70%; margin: 2.0rem 0; padding-left: 1.0rem; border-left: 0.5rem solid #DFE2E5; font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif; }
 
@@ -79,7 +79,7 @@ table { margin: 0 0 1.5em; width: 100%; }
 
 table.code { empty-cells: show; }
 
-table.code th, table.code td { font-family: Hack, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 0.85rem; padding: 4px 32px 4px 0; line-height: 1.1rem; border-bottom: 1px solid #DFE2E5; text-align: left; }
+table.code th, table.code td { font-family: Hack, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 0.875rem; padding: 4px 32px 4px 0; line-height: 1.1rem; border-bottom: 1px solid #DFE2E5; text-align: left; }
 
 table.code th:last-child, table.code td:last-child { padding-right: 0; }
 

@@ -71,10 +71,10 @@ header.site-header {
     }
 }
 
-body.parent-pageid-1430 header.site-header .site-title a,
-body.parent-pageid-1430 header.site-header .site-title a:visited,
-body.page-id-1430 header.site-header .site-title a,
-body.page-id-1430 header.site-header .site-title a:visited {
+body.parent-pageid-1497 header.site-header .site-title a,
+body.parent-pageid-1497 header.site-header .site-title a:visited,
+body.page-id-1497 header.site-header .site-title a,
+body.page-id-1497 header.site-header .site-title a:visited {
     color: #278438;
 }
 
@@ -184,7 +184,8 @@ figure.fullwidth {
 
 figcaption {
 	color: #666;
-	font-size: 0.85rem;
+	font-size: 0.8125rem;
+    margin-bottom: 2.0rem
 }
 
 blockquote {
@@ -209,7 +210,7 @@ table.code {
 
     th, td {
         font-family: $font-code;
-        font-size: 0.85rem;
+        font-size: 0.875rem;
         padding: 4px 32px 4px 0;
         line-height: 1.1rem;
         border-bottom: 1px solid $grey6;
