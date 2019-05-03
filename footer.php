@@ -13,7 +13,7 @@
 
 </main>
 
-<footer class="site-footer" role="colophon">
+<footer class="site-footer" role="contentinfo">
 
     &copy; <?php echo date('Y'); ?> <a href="/">mkaz.blog</a>
 
