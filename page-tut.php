@@ -47,6 +47,7 @@ if ( $post->ID === $parent_id ) {
 <title><?php wp_title( '-', true, 'right' ); ?> <?php echo esc_html($parent_title); ?> mkaz.blog</title>
 
 <?php wp_head(); ?>
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/asciinema/asciinema-player.css"/>
 
 </head>
 
@@ -115,6 +116,8 @@ if ( $parent->have_posts() ) : ?>
     </main>
 
 </div>
+
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/asciinema/asciinema-player.js"></script>
 <?php
 get_footer();
 
