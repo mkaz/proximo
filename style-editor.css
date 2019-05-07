@@ -30,6 +30,6 @@ blockquote footer { font-family: Cambria, "Hoefler Text", Utopia, "Liberation Se
 
 .editor-post-title__block .editor-post-title__input { font-size: 2.0rem; }
 
-.editor-rich-text__tinymce code, .code { font-family: Hack, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 16px; color: #F30899; background-color: none; }
+.editor-rich-text__tinymce code, .code { font-family: Hack, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 16px; color: #D200AB; background-color: none; }
 
 .alignleft, .alignright { max-width: 20rem; }

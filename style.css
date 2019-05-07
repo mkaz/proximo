@@ -54,7 +54,7 @@ article, section.content-area { max-width: 46rem; width: 100%; margin: 0 0 0 2re
 @media screen and (max-width: 46rem) { main, article, section.content-area { margin-left: 0; }
   aside { display: none; } }
 
-pre, code { font-size: 16px; font-family: Hack, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; color: #F30899; }
+pre, code { font-size: 16px; font-family: Hack, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; color: #D200AB; }
 
 pre { background-color: #FFFFFF; border: 1px solid #CCC; padding: 1.0rem; }
 
